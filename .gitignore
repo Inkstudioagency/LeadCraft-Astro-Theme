@@ -8,7 +8,11 @@ node_modules/
 
 # environment
 .env
-.env.production
+.env.*
+!.env.example
+
+# deployment
+.vercel
 
 # macOS / editors
 .DS_Store
