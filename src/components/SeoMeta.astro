@@ -1,0 +1,38 @@
+---
+/**
+ * Title, description, Open Graph and Twitter tags for a page.
+ * Anything left unset falls back to `src/config/site.json`.
+ */
+import site from '../config/site.json';
+
+interface Props {
+  title?: string;
+  description?: string;
+  ogImage?: string;
+  /** `article` on blog/case-study/service detail pages, `website` elsewhere. */
+  ogType?: string;
+}
+
+const {
+  title = site.title,
+  description = site.description,
+  ogImage = site.ogImage,
+  ogType = 'website',
+} = Astro.props;
+
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).href;
+const image = new URL(ogImage, Astro.site ?? Astro.url).href;
+---
+
+<title>{title}</title>
+<meta content={description} name="description" />
+<meta content={title} property="og:title" />
+<meta content={description} property="og:description" />
+<meta content={image} property="og:image" />
+<meta content={title} name="twitter:title" />
+<meta content={description} name="twitter:description" />
+<meta content={image} name="twitter:image" />
+<meta property="og:type" content={ogType} />
+<meta property="og:url" content={canonical} />
+<meta content="summary_large_image" name="twitter:card" />
+<link rel="canonical" href={canonical} />

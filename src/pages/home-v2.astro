@@ -1,0 +1,1159 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { formatDate, getBlogs, getCaseStudies, getServices } from '../lib/content';
+import limits from '../config/collections.json';
+
+const [homeServices, homeCaseStudies, homeBlogs] = await Promise.all([
+  getServices().then((items) => items.slice(0, limits.home.services)),
+  getCaseStudies().then((items) => items.slice(0, limits.home.caseStudies)),
+  getBlogs().then((items) => items.slice(0, limits.home.blogs)),
+]);
+
+---
+
+<BaseLayout
+  wfPageId="6a84225ef14a6cfa777048b6"
+  title="LeadCraft - Consulting Website Astro Theme"
+  description="Leadcraft is a premium Business Consulting Astro theme for consultants, agencies, and advisors to showcase services and generate leads."
+  hidden=".cta-inner-block, .cta-title.is-1, .cta-title.is-2, .cta-button-block, .link-button-icon, .blog-collection-block.is-1, .blog-collection-block.is-2, .blog-collection-block.is-3, [to-top-8], .timeline-ht-liner-block-v2, .timeline-pointer-block-v2.is-1, .timeline-pointer-block-v2.is-2, .timeline-pointer-block-v2.is-3, .timeline-pointer-block-v2.is-4, .team-cards-inner-block-v3, .team-scroll-liner-ht, .our-value-single-card-block-v3.is-1, .our-value-single-card-block-v3.is-2, .our-value-single-card-block-v3.is-3, .about-title-two, .about-title-overlay.is-1, .about-title-overlay.is-2, .about-title-overlay.is-3, .about-title-overlay.is-4, .button-text-block, .button-dot-block.dark, .footer-logo-content-block, [to-top-6], .heading-style-1-main, .heading-style-1-ht, .button-icon, [to-top-0], .button-dot-block, .heading-style-2, .faq-icon-line.is-2, [details-page-title], [to-top-4], [to-top-2], .link-dot, .link-text, [to-top-0s], [to-top-2s], [to-top-4s], [to-top-6s], [to-top-8s], .testimonial-cards-row.left, .testimonial-cards-row.right"
+>
+    <main class="main-wrapper">
+      <section class="section_hero">
+        <div class="hero-gap home-pd">
+          <div class="w-layout-blockcontainer container-main relative w-container">
+            <div class="hero-wrapper">
+              <div class="hero-content-block-v2">
+                <div class="hero-left-content-block">
+                  <div to-top-0s="" class="hero-summary-block max-width-24">
+                    <p class="text-size-regular text-color-white">Helping founders, executives, and ambitious teams break growth plateaus, build scalable systems, and create measurable business momentum.</p>
+                  </div>
+                  <div class="hero-title-block-v2">
+                    <h1 class="heading-style-1"><span class="heading-style-1-main">Unlock Your Next Level of</span> <span class="heading-style-1-ht">Growth</span></h1>
+                  </div>
+                </div>
+                <div class="hero-right-content-block">
+                  <div to-top-4s="" class="hero-card-block-v2">
+                    <div class="hero-card-image-block"><img src="/images/Hero-Card-Image.webp" loading="lazy" alt="Woman in blue speaks to a diverse group of people engaged in conversation." class="hero-card-image">
+                      <a href="#" class="hero-card-lightbox w-inline-block w-lightbox">
+                        <div class="card-lightbox-icon w-embed"><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.3365 8.90706C13.9904 10.2222 12.3546 11.1515 9.08302 13.0101C5.92039 14.8068 4.33913 15.7053 3.06478 15.3441C2.53793 15.1948 2.0579 14.9113 1.67076 14.5207C0.734375 13.5759 0.734375 11.7435 0.734375 8.07862C0.734375 4.41375 0.734375 2.58131 1.67076 1.63656C2.0579 1.24598 2.53793 0.962419 3.06478 0.813125C4.33913 0.452013 5.92039 1.35038 9.08302 3.14714C12.3546 5.00576 13.9904 5.93508 14.3365 7.25019C14.4794 7.79308 14.4794 8.36417 14.3365 8.90706Z" stroke="currentColor" stroke-width="1.46885" stroke-linejoin="round"></path>
+                          </svg></div>
+                        <script type="application/json" class="w-json" is:inline>{
+  "items": [
+    {
+      "url": "https://www.youtube.com/watch?v=setu9Ir1miY&list=PLPmnoMVpkxfj-DzMkYNf7LM3ebjwoY6b2",
+      "originalUrl": "https://www.youtube.com/watch?v=setu9Ir1miY&list=PLPmnoMVpkxfj-DzMkYNf7LM3ebjwoY6b2",
+      "width": 940,
+      "height": 528,
+      "thumbnailUrl": "https://i.ytimg.com/vi/setu9Ir1miY/hqdefault.jpg",
+      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fsetu9Ir1miY%3Flist%3DPLPmnoMVpkxfj-DzMkYNf7LM3ebjwoY6b2&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dsetu9Ir1miY&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fsetu9Ir1miY%2Fhqdefault.jpg&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture\" allowfullscreen=\"true\"></iframe>",
+      "type": "video"
+    }
+  ],
+  "group": ""
+}</script>
+                      </a>
+                    </div>
+                    <div class="hero-card-text-block">
+                      <div class="text-size-regular text-weight-medium text-color-white">See how we&#x27;re help business for their future growth</div>
+                    </div>
+                  </div>
+                  <div to-top-6s="" class="hero-button-block-v2">
+                    <a href="/contact-v1" data-wf--primary-button--variant="varient-1" data-wf-component-id="004977be-65b2-b2cc-9e77-75ec7af4b400" data-wf-variant-state="base" class="primary-button w-inline-block">
+                      <div class="button-dot-block"></div>
+                      <div class="button-text-block">
+                        <div class="button-text is-1">Book a Free Call</div>
+                      </div>
+                      <div class="button-icon-block">
+                        <div class="button-icon w-embed"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.083 16L15.833 12L8.33301 12L12.083 16Z" fill="currentColor"></path>
+                            <path d="M11.333 2L11.333 12L12.833 12L12.833 2L11.333 2Z" fill="currentColor"></path>
+                            <path d="M2.33301 3.5L12.333 3.5L12.333 2L2.33301 2L2.33301 3.5Z" fill="currentColor"></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="/services" data-wf-component-id="c11801f4-ebee-886b-d245-771d8d33a87e" data-wf-variant-state="base" class="secondary-button w-inline-block">
+                      <div class="button-dot-block dark"></div>
+                      <div class="button-text-block">
+                        <div class="button-text">Get consulting</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-bg-block"><img src="/images/Hero-Image-7.webp" loading="lazy" sizes="(max-width: 2880px) 100vw, 2880px" srcset="/images/c11419d82ddf4bfaa1b6e4f733377514_Hero-Image-7-p-500.webp 500w, /images/c11419d82ddf4bfaa1b6e4f733377514_Hero-Image-7-p-800.webp 800w, /images/c11419d82ddf4bfaa1b6e4f733377514_Hero-Image-7-p-1080.webp 1080w, /images/c11419d82ddf4bfaa1b6e4f733377514_Hero-Image-7-p-1600.webp 1600w, /images/c11419d82ddf4bfaa1b6e4f733377514_Hero-Image-7-p-2000.webp 2000w, /images/c11419d82ddf4bfaa1b6e4f733377514_Hero-Image-7-p-2600.webp 2600w, /images/Hero-Image-7.webp 2880w" alt="Silhouette of a man with glasses looking upward against a dark blue background." class="hero-bg-image"><img src="/images/Hero-BG-Noise-1.svg" loading="lazy" alt="Hero BG Noise " class="hero-bg-noise"><img src="/images/Hero-BG-Dot.svg" loading="lazy" alt="Hero BG Dot" class="hero-bg-dot"></div>
+      </section>
+      <div class="others-section home-v2">
+        <section to-top-0="" class="section_about">
+          <div class="w-layout-blockcontainer container-fluid w-container">
+            <div class="about-wrapper">
+              <div class="section-heading-block container-main">
+                <div class="about-title-block max-width-54">
+                  <h2 class="about-title-text">Trusted by ambitious brands, visionary founders, and growth <span class="about-title-icon-1">      </span> focused teams building <span class="about-title-icon-2">      </span> business success.</h2>
+                  <div class="about-title-overlay-block">
+                    <div class="about-title-overlay is-1"></div>
+                    <div class="about-title-overlay is-2"></div>
+                    <div class="about-title-overlay is-3"></div>
+                    <div class="about-title-overlay is-4"></div>
+                  </div>
+                </div>
+              </div>
+              <div to-top-2="" class="about-content-block-v2">
+                <div class="about-content-left-block">
+                  <div class="about-top-content-block-v2">
+                    <div class="about-card-avatar-block"><img src="/images/About-Avatar_1About-Avatar.png" loading="lazy" alt="Smiling woman with long hair wearing a black top against a blue circular background." class="about-card-avatar is-1"><img src="/images/About-Avatar-1_1About-Avatar-1.png" loading="lazy" alt="Smiling woman with long dark hair wearing a black top, on a white background." class="about-card-avatar"><img src="/images/About-Avatar_2About-Avatar.png" loading="lazy" alt="Smiling man wearing a yellow shirt against a white background." class="about-card-avatar"></div>
+                    <div class="heading-style-6 text-color-white">Growth Frameworks</div>
+                  </div>
+                  <div class="about-image-block-v2"><img src="/images/About-Image--V2_1About-Image--V2.webp" loading="lazy" alt="Man in blue sweater leading business meeting with eight colleagues sitting around a table with papers." class="about-image"></div>
+                </div>
+                <div class="about-content-middle-block-v2">
+                  <div class="about-top-content-block bottom-liner">
+                    <div class="about-top-content-icon w-embed"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 33C26.2843 33 33 26.2843 33 18C33 9.71573 26.2843 3 18 3C9.71573 3 3 9.71573 3 18C3 26.2843 9.71573 33 18 33Z" stroke="#4F88F8" stroke-width="1.71"></path>
+                        <path d="M12 18C12 27 18 33 18 33C18 33 24 27 24 18C24 9 18 3 18 3C18 3 12 9 12 18Z" stroke="#4F88F8" stroke-width="1.71" stroke-linejoin="round"></path>
+                        <path d="M31.5 22.5H4.5" stroke="#4F88F8" stroke-width="1.71" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M31.5 13.5H4.5" stroke="#4F88F8" stroke-width="1.71" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                    </div>
+                    <div class="heading-style-6 text-color-white">Growth Frameworks</div>
+                  </div>
+                  <div class="about-text-content-block">
+                    <div class="about-text-block">
+                      <h3 class="heading-style-6">Our proven methodology helps leaders replace uncertainty with clarity, structure, and  business momentum. Our proven methodology helps leaders replace uncertainty with clarity, structure, and measurable business momentum.</h3>
+                    </div>
+                    <div class="about-button-block">
+                      <a href="/about-v2" data-wf--primary-button--variant="varient-1" data-wf-component-id="004977be-65b2-b2cc-9e77-75ec7af4b400" data-wf-variant-state="base" class="primary-button w-inline-block">
+                        <div class="button-dot-block"></div>
+                        <div class="button-text-block">
+                          <div class="button-text is-1">Learn more about us</div>
+                        </div>
+                        <div class="button-icon-block">
+                          <div class="button-icon w-embed"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M12.083 16L15.833 12L8.33301 12L12.083 16Z" fill="currentColor"></path>
+                              <path d="M11.333 2L11.333 12L12.833 12L12.833 2L11.333 2Z" fill="currentColor"></path>
+                              <path d="M2.33301 3.5L12.333 3.5L12.333 2L2.33301 2L2.33301 3.5Z" fill="currentColor"></path>
+                            </svg>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div id="w-node-_341fa400-63da-99dc-6fe9-7665e916db32-777048b6" class="about-content-right-block">
+                  <div class="about-stat-block">
+                    <div class="about-card-number-block">
+                      <div class="about-card-number _wf-counter">56k</div>
+                    </div>
+                    <div class="about-card-text-block">
+                      <p class="text-size-regular">We&#x27;ve delivered over 15K+ successful projects</p>
+                    </div>
+                  </div>
+                  <div id="w-node-b1f783f8-0143-f61d-4e48-8af1bd00c451-777048b6" class="about-stat-liner"></div>
+                  <div class="about-stat-block">
+                    <div class="about-card-number-block">
+                      <div class="about-card-number _wf-counter">95%</div>
+                    </div>
+                    <div class="about-card-text-block">
+                      <p class="text-size-regular">Clients satisfied and repeating rateClients satisfied and repeating rate</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-wf--logo-marquee--variant="v1" class="logo-content-block">
+                <div to-top-0="" class="logo-title-block">
+                  <div class="text-size-small text-align-center text-color-white">Brands we worked with</div>
+                </div>
+                <div to-top-2="" class="logo-content-inner">
+                  <div class="logo-row-block">
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-6.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-2.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-1.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-3.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-4.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-3.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-1.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-7.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-1.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-2.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-4.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-2.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-4.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-5.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-4.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-3.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-5.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-1.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-2.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-5.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-7.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-1.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-6.svg" alt="logo" class="logo"></div>
+                  </div>
+                  <div class="logo-overlay-block"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section_our-value">
+          <div class="section-gap">
+            <div class="w-layout-blockcontainer container-main w-container">
+              <div class="our-value-wrapper">
+                <div class="section-heading-block">
+                  <div to-top-0="" class="section-subtitle-block bottom-space">
+                    <div class="subtitle-dot"></div>
+                    <div class="subtitle-text">our Value</div>
+                  </div>
+                  <div class="section-title-block max-width-35">
+                    <h2 class="heading-style-2 text-align-center">A Clear System for Scalable Growth</h2>
+                  </div>
+                </div>
+                <div class="our-value-content-block">
+                  <div class="our-value-cards-block-v2">
+                    <div to-top-2="" class="our-value-single-card-block">
+                      <div class="our-value-card-icon-block">
+                        <div class="our-value-card-icon w-embed"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23.0758 16.6434C23.3932 15.7855 24.6068 15.7855 24.9242 16.6434L26.347 20.4886C26.5466 21.028 26.972 21.4534 27.5114 21.653L31.3566 23.0758C32.2144 23.3932 32.2144 24.6068 31.3566 24.9242L27.5114 26.347C26.972 26.5466 26.5466 26.972 26.347 27.5114L24.9242 31.3566C24.6068 32.2144 23.3932 32.2144 23.0758 31.3566L21.653 27.5114C21.4534 26.972 21.028 26.5466 20.4886 26.347L16.6434 24.9242C15.7855 24.6068 15.7855 23.3932 16.6434 23.0758L20.4886 21.653C21.028 21.4534 21.4534 21.028 21.653 20.4886L23.0758 16.6434Z" stroke="white" stroke-width="1.71429"></path>
+                            <path d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z" stroke="white" stroke-width="1.71429"></path>
+                            <path d="M16 16C17.3465 8.93638 20.4218 4 24 4C27.5782 4 30.6534 8.93638 32 16" stroke="white" stroke-width="1.71429" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M16 32C17.3465 39.0636 20.4218 44 24 44C27.5782 44 30.6534 39.0636 32 32" stroke="white" stroke-width="1.71429" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M4 24H9M44 24H39" stroke="white" stroke-width="1.71429" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg></div>
+                      </div>
+                      <div class="our-value-card-text-block">
+                        <h3 class="heading-style-6">Goal-driven roadmap</h3>
+                        <p class="text-size-regular">Our proven methodology helps leaders replace uncertainty with clarity, structure, and measurable business momentum.</p>
+                      </div>
+                    </div>
+                    <div to-top-4="" id="w-node-_341fa400-63da-99dc-6fe9-7665e916db8c-777048b6" class="our-value-image-block"><img src="/images/Our-Value-Overlay.svg" loading="lazy" alt="Our Value Overlay" class="our-value-image-overlay"><img src="/images/Our-Value-Image.webp" loading="lazy" sizes="(max-width: 541px) 100vw, 541px" srcset="/images/24f4dd0d54a42f269a88a8ce187ab19e_Our-Value-Image-p-500.webp 500w, /images/Our-Value-Image.webp 541w" alt="A woman in a black blazer speaks to three attentive colleagues at a table with a laptop." class="our-value-image"></div>
+                    <div to-top-6="" class="our-value-single-card-block">
+                      <div class="our-value-card-icon-block">
+                        <div class="our-value-card-icon w-embed"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M30.2622 4.99976C28.2922 4.35086 26.187 3.99976 23.9998 3.99976C12.9541 3.99976 3.99976 12.9541 3.99976 23.9998C3.99976 35.0454 12.9541 43.9998 23.9998 43.9998C35.0454 43.9998 43.9998 35.0454 43.9998 23.9998C43.9998 21.9094 43.679 19.8938 43.0842 17.9998" stroke="white" stroke-width="1.71429" stroke-linecap="round"></path>
+                            <path d="M34.0002 23.9998C34.0002 29.5226 29.523 33.9998 24.0002 33.9998C18.4774 33.9998 14.0002 29.5226 14.0002 23.9998C14.0002 18.4769 18.4774 13.9998 24.0002 13.9998" stroke="white" stroke-width="1.71429" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M39 8.99976L24 23.9998M39 8.99976V3.99976M39 8.99976H44" stroke="white" stroke-width="1.71429" stroke-linecap="round"></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="our-value-card-text-block">
+                        <h3 class="heading-style-6">Execute strategy weekly</h3>
+                        <p class="text-size-regular">Our proven methodology helps leaders replace uncertainty with clarity, structure, and measurable business momentum.</p>
+                      </div>
+                    </div>
+                    <div to-top-0="" class="our-value-single-card-block">
+                      <div class="our-value-card-icon-block">
+                        <div class="our-value-card-icon w-embed"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.9998 21.9998C17.9703 21.9998 21.9998 17.9703 21.9998 12.9998C21.9998 8.02919 17.9703 3.99976 12.9998 3.99976C8.02919 3.99976 3.99976 8.02919 3.99976 12.9998C3.99976 17.9703 8.02919 21.9998 12.9998 21.9998Z" stroke="white" stroke-width="1.71429"></path>
+                            <path d="M22 12H36.5526C41.0688 12 43.327 12 43.889 13.3567C44.451 14.7134 42.8542 16.3102 39.6608 19.5037L19.5037 39.6608C16.3102 42.8542 14.7134 44.451 13.3567 43.889C12 43.327 12 41.0688 12 36.5526V22" stroke="white" stroke-width="1.71429"></path>
+                            <path d="M35.0002 24H36.0002C39.7714 24 41.657 24 42.8286 25.1716C44.0002 26.3432 44.0002 28.2288 44.0002 32V34C44.0002 37.7712 44.0002 39.6568 42.8286 40.8284C41.657 42 39.7714 42 36.0002 42H34.0002C30.229 42 28.3434 42 27.1718 40.8284C26.0002 39.6568 26.0002 37.7712 26.0002 34V33" stroke="white" stroke-width="1.71429"></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="our-value-card-text-block">
+                        <h3 class="heading-style-6">KPIs and accountability</h3>
+                        <p class="text-size-regular">Our proven methodology helps leaders replace uncertainty with clarity, structure, and measurable business momentum.</p>
+                      </div>
+                    </div>
+                    <div to-top-2="" class="our-value-single-card-block">
+                      <div class="our-value-card-icon-block">
+                        <div class="our-value-card-icon w-embed"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.0002 34.0002V26.0002" stroke="white" stroke-width="1.71429" stroke-linecap="round"></path>
+                            <path d="M24 34.0002V14.0002" stroke="white" stroke-width="1.71429" stroke-linecap="round"></path>
+                            <path d="M33.9998 34.0002V22.0002" stroke="white" stroke-width="1.71429" stroke-linecap="round"></path>
+                            <path d="M5.00024 24.0002C5.00024 15.0436 5.00024 10.5652 7.78272 7.78272C10.5652 5.00024 15.0436 5.00024 24.0002 5.00024C32.9568 5.00024 37.4352 5.00024 40.2178 7.78272C43.0002 10.5652 43.0002 15.0436 43.0002 24.0002C43.0002 32.9568 43.0002 37.4352 40.2178 40.2178C37.4352 43.0002 32.9568 43.0002 24.0002 43.0002C15.0436 43.0002 10.5652 43.0002 7.78272 40.2178C5.00024 37.4352 5.00024 32.9568 5.00024 24.0002Z" stroke="white" stroke-width="1.71429" stroke-linejoin="round"></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="our-value-card-text-block">
+                        <h3 class="heading-style-6">Build scalable systems</h3>
+                        <p class="text-size-regular">Our proven methodology helps leaders replace uncertainty with clarity, structure, and measurable business momentum.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section_services">
+          <div class="section-gap">
+            <div class="w-layout-blockcontainer container-main w-container">
+              <div class="services-wrapper">
+                <div class="section-heading-block align-left">
+                  <div to-top-0="" class="section-subtitle-block bottom-space">
+                    <div class="subtitle-dot"></div>
+                    <div class="subtitle-text">our Service</div>
+                  </div>
+                  <div class="section-title-block max-width-36">
+                    <h2 class="heading-style-2">Coaching Designed Around Your Growth Goals</h2>
+                  </div>
+                </div>
+                <div to-top-4="" class="services-content-block-v2">
+                  <div class="services-collection-block-v2 w-dyn-list">
+                    <div role="list" class="services-collection-list verticle w-dyn-items">
+                      {homeServices.map((service) => (
+                      <div role="listitem" class="services-item-card-block v2 w-dyn-item">
+                        <div class="services-item-content-block space-between">
+                          <div class="services-item-text-block">
+                            <a aria-label="services-item-title-block" href={`/services/${service.slug}`} class="services-item-title-block w-inline-block">
+                              <h3 class="services-item-title">{service.title}</h3>
+                            </a>
+                            <div class="services-item-summary-block">
+                              <p class="text-size-regular">{service.summary}</p>
+                            </div>
+                          </div>
+                          <div class="services-item-button-block">
+                            <a href={`/services/${service.slug}`} class="link-button w-inline-block">
+                              <div class="link-button-icon w-embed"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M16 12.083L12 15.833V8.33301L16 12.083Z" fill="currentColor"></path>
+                                  <path d="M2 11.333H12V12.833H2V11.333Z" fill="currentColor"></path>
+                                  <path d="M3.5 2.33301V12.333H2V2.33301H3.5Z" fill="currentColor"></path>
+                                </svg></div>
+                              <div class="link-button-text">Learn more</div>
+                            </a>
+                          </div>
+                        </div>
+                        <a id="w-node-_741b8f76-af9c-05a3-24a0-a20249b98b2d-777048b6" href={`/services/${service.slug}`} class="services-item-thumbnail-block v2 w-inline-block"><img src="/images/Service-Image-Overlay.svg" loading="lazy" alt="Service Image Overlay" class="services-thumbnail-overlay"><img src={service.thumbnail} loading="lazy" alt={service.title} class="services-item-thumbnail"></a>
+                      </div>
+                      ))}
+                    </div>
+                    {homeServices.length === 0 && (
+                    <div class="w-dyn-empty">
+                      <div>No items found.</div>
+                    </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section_process">
+          <div class="section-gap">
+            <div class="w-layout-blockcontainer container-main w-container">
+              <div class="process-wrapper-v2">
+                <div class="section-heading-block align-left sticky">
+                  <div to-top-0="" class="section-subtitle-block bottom-space">
+                    <div class="subtitle-dot"></div>
+                    <div class="subtitle-text">our process</div>
+                  </div>
+                  <div class="section-title-block max-width-35">
+                    <h2 class="heading-style-2">From start to final process of your business growth</h2>
+                  </div>
+                </div>
+                <div to-top-4="" class="process-content-block-v2">
+                  <div class="process-cards-block-v2">
+                    <div class="process-single-card-block-v2">
+                      <div class="process-card-heading-block v2">
+                        <div class="process-card-number-block">
+                          <div class="process-card-number-dot"></div>
+                          <div class="process-card-number">01</div>
+                        </div>
+                        <div class="process-card-title-block">
+                          <h3 class="heading-style-5">Connect Your Data</h3>
+                        </div>
+                      </div>
+                      <div class="process-card-image-block">
+                        <div class="process-card-animation-v2" data-w-id="1d7b5c9c-be61-b4ec-8365-97e75f49690b" data-animation-type="lottie" data-src="/documents/data-04.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-duration="0" data-loading="eager"></div>
+                      </div>
+                      <div class="process-card-summary-block">
+                        <p class="text-size-regular">We begin by diving deep into your business uncovering hidden bottlenecks.</p>
+                      </div>
+                    </div>
+                    <div class="process-single-card-block-v2">
+                      <div class="process-card-heading-block v2">
+                        <div class="process-card-number-block">
+                          <div class="process-card-number-dot"></div>
+                          <div class="process-card-number">02</div>
+                        </div>
+                        <div class="process-card-title-block">
+                          <h3 class="heading-style-5">Strategy &amp; Roadmap</h3>
+                        </div>
+                      </div>
+                      <div class="process-card-image-block">
+                        <div class="process-card-animation-v2" data-w-id="e6972acc-ca6e-f221-1194-2a064cd3b1f7" data-animation-type="lottie" data-src="/documents/data-03.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-duration="0" data-loading="eager"></div>
+                      </div>
+                      <div class="process-card-summary-block">
+                        <p class="text-size-regular">With a clear picture of where you stand, we craft a customized, step-by-step growth roadmap.</p>
+                      </div>
+                    </div>
+                    <div class="process-single-card-block-v2">
+                      <div class="process-card-heading-block v2">
+                        <div class="process-card-number-block">
+                          <div class="process-card-number-dot"></div>
+                          <div class="process-card-number">03</div>
+                        </div>
+                        <div class="process-card-title-block">
+                          <h3 class="heading-style-5">Execution &amp; Optimize</h3>
+                        </div>
+                      </div>
+                      <div class="process-card-image-block">
+                        <div class="process-card-animation-v2" data-w-id="f85f81a1-75a3-8887-64be-e38975c3614c" data-animation-type="lottie" data-src="/documents/data-02.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-duration="0" data-loading="eager"></div>
+                      </div>
+                      <div class="process-card-summary-block">
+                        <p class="text-size-regular">Strategy means nothing without action. We work alongside you to implement the plan.</p>
+                      </div>
+                    </div>
+                    <div class="process-single-card-block-v2">
+                      <div class="process-card-heading-block v2">
+                        <div class="process-card-number-block">
+                          <div class="process-card-number-dot"></div>
+                          <div class="process-card-number">04</div>
+                        </div>
+                        <div class="process-card-title-block">
+                          <h3 class="heading-style-5">Scale &amp; Sustain</h3>
+                        </div>
+                      </div>
+                      <div class="process-card-image-block">
+                        <div class="process-card-animation-v2" data-w-id="ac897d67-6b70-7358-1a84-35ec93b34f4f" data-animation-type="lottie" data-src="/documents/data.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-duration="0" data-loading="eager"></div>
+                      </div>
+                      <div class="process-card-summary-block">
+                        <p class="text-size-regular">Once momentum builds, we shift focus to scaling what&#x27;s working — creating repeatable systems.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section_testimonial">
+          <div class="section-gap">
+            <div class="w-layout-blockcontainer container-fluid w-container">
+              <div class="testimonial-wrapper">
+                <div class="section-heading-block align-left-mobile container-main">
+                  <div to-top-0="" class="section-subtitle-block bottom-space">
+                    <div class="subtitle-dot"></div>
+                    <div class="subtitle-text">Testimonials</div>
+                  </div>
+                  <div class="section-title-block max-width-35">
+                    <h2 class="heading-style-2">What Leaders Say About Working With Us</h2>
+                  </div>
+                </div>
+                <div to-top-4="" class="testimonial-content-block vertical">
+                  <div class="testimonial-card-row">
+                    <div class="testimonial-cards-row left">
+                      <div class="testimonial-card-block-v3">
+                        <div class="testimonial-card-content-block-v3">
+                          <div class="testimonial-card-bottom-block">
+                            <div class="testimonial-card-star-block"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"></div>
+                            <div class="testimonial-card-text-block-v3">
+                              <h3 class="heading-style-6">Within just six months, our revenue doubled, our leadership team became aligned, and we finally built a business model that can scale with confidence and drive lasting success.</h3>
+                            </div>
+                          </div>
+                          <div class="testimonial-card-top-block-v3">
+                            <div class="testimonial-card-client-info-block">
+                              <div class="testimonial-sm-image-block"><img src="/images/Testimonial-SM-Image-1_1Testimonial-SM-Image-1.webp" loading="lazy" alt="testimonial-sm-image" class="testimonial-sm-image-v3"></div>
+                              <div class="testimonial-card-client-block">
+                                <div class="text-size-regular text-weight-medium text-color-white">Michael Anderson</div>
+                                <p class="text-size-small">Founder, ScaleLabs</p>
+                              </div>
+                            </div>
+                            <div class="testimonial-card-logo-block"><img src="/images/Company-logo.svg" loading="lazy" alt="testimonial-card-logo" class="testimonial-card-logo"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="testimonial-card-block-v3">
+                        <div class="testimonial-card-content-block-v3">
+                          <div class="testimonial-card-bottom-block">
+                            <div class="testimonial-card-star-block"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"></div>
+                            <div class="testimonial-card-text-block-v3">
+                              <h3 class="heading-style-6">Thanks to their guidance, our revenue increased significantly, our leadership became more focused, and our business is now positioned for long-term growth.</h3>
+                            </div>
+                          </div>
+                          <div class="testimonial-card-top-block-v3">
+                            <div class="testimonial-card-client-info-block">
+                              <div class="testimonial-sm-image-block"><img src="/images/Testimonial-Sm-Image-2_2.webp" loading="lazy" alt="testimonial-sm-image" class="testimonial-sm-image-v3"></div>
+                              <div class="testimonial-card-client-block">
+                                <div class="text-size-regular text-weight-medium text-color-white">Robert Walker</div>
+                                <p class="text-size-small">Founder, ScaleLabs</p>
+                              </div>
+                            </div>
+                            <div class="testimonial-card-logo-block"><img src="/images/Testimonial-Logo-7.svg" loading="lazy" alt="testimonial-card-logo" class="testimonial-card-logo"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="testimonial-card-block-v3">
+                        <div class="testimonial-card-content-block-v3">
+                          <div class="testimonial-card-bottom-block">
+                            <div class="testimonial-card-star-block"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"></div>
+                            <div class="testimonial-card-text-block-v3">
+                              <h3 class="heading-style-6">Our organization experienced rapid growth, stronger decision-making, and a clear roadmap that gave us confidence to scale effectively.</h3>
+                            </div>
+                          </div>
+                          <div class="testimonial-card-top-block-v3">
+                            <div class="testimonial-card-client-info-block">
+                              <div class="testimonial-sm-image-block"><img src="/images/Testimonial-Sm-Image.webp" loading="lazy" alt="testimonial-sm-image" class="testimonial-sm-image-v3"></div>
+                              <div class="testimonial-card-client-block">
+                                <div class="text-size-regular text-weight-medium text-color-white">Kevin Turne</div>
+                                <p class="text-size-small">Founder, ScaleLabs</p>
+                              </div>
+                            </div>
+                            <div class="testimonial-card-logo-block"><img src="/images/Testimonial-Logo-6.svg" loading="lazy" alt="testimonial-card-logo" class="testimonial-card-logo"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="testimonial-card-block-v3">
+                        <div class="testimonial-card-content-block-v3">
+                          <div class="testimonial-card-bottom-block">
+                            <div class="testimonial-card-star-block"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"></div>
+                            <div class="testimonial-card-text-block-v3">
+                              <h3 class="heading-style-6">Within a short period, we improved profitability, unified our leadership team, and built systems that support consistent growth and performance.</h3>
+                            </div>
+                          </div>
+                          <div class="testimonial-card-top-block-v3">
+                            <div class="testimonial-card-client-info-block">
+                              <div class="testimonial-sm-image-block"><img src="/images/Testimonial-Sm-Image-3.webp" loading="lazy" alt="testimonial-sm-image" class="testimonial-sm-image-v3"></div>
+                              <div class="testimonial-card-client-block">
+                                <div class="text-size-regular text-weight-medium text-color-white">Rachel Morgan</div>
+                                <p class="text-size-small">Founder, ScaleLabs</p>
+                              </div>
+                            </div>
+                            <div class="testimonial-card-logo-block"><img src="/images/Testimonial-Logo.svg" loading="lazy" alt="testimonial-card-logo" class="testimonial-card-logo"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="testimonial-card-block-v3">
+                        <div class="testimonial-card-content-block-v3">
+                          <div class="testimonial-card-bottom-block">
+                            <div class="testimonial-card-star-block"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"></div>
+                            <div class="testimonial-card-text-block-v3">
+                              <h3 class="heading-style-6">The impact was immediate—our business became more efficient, our goals became clearer, and our growth strategy finally started working.</h3>
+                            </div>
+                          </div>
+                          <div class="testimonial-card-top-block-v3">
+                            <div class="testimonial-card-client-info-block">
+                              <div class="testimonial-sm-image-block"><img src="/images/Testimonial-Sm-Image-1_2.webp" loading="lazy" alt="testimonial-sm-image" class="testimonial-sm-image-v3"></div>
+                              <div class="testimonial-card-client-block">
+                                <div class="text-size-regular text-weight-medium text-color-white">Brian Richardson</div>
+                                <p class="text-size-small">Founder, ScaleLabs</p>
+                              </div>
+                            </div>
+                            <div class="testimonial-card-logo-block"><img src="/images/Testimonial-Logo-3.svg" loading="lazy" alt="testimonial-card-logo" class="testimonial-card-logo"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="testimonial-card-block-v3">
+                        <div class="testimonial-card-content-block-v3">
+                          <div class="testimonial-card-bottom-block">
+                            <div class="testimonial-card-star-block"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"></div>
+                            <div class="testimonial-card-text-block-v3">
+                              <h3 class="heading-style-6">In a matter of months, we gained strategic clarity, improved operational efficiency, and built a business foundation designed for sustainable success.</h3>
+                            </div>
+                          </div>
+                          <div class="testimonial-card-top-block-v3">
+                            <div class="testimonial-card-client-info-block">
+                              <div class="testimonial-sm-image-block"><img src="/images/Testimonial-Sm-Image_1.webp" loading="lazy" alt="testimonial-sm-image" class="testimonial-sm-image-v3"></div>
+                              <div class="testimonial-card-client-block">
+                                <div class="text-size-regular text-weight-medium text-color-white">Steven Cooper</div>
+                                <p class="text-size-small">Founder, ScaleLabs</p>
+                              </div>
+                            </div>
+                            <div class="testimonial-card-logo-block"><img src="/images/Testimonial-Logo-8.svg" loading="lazy" alt="testimonial-card-logo" class="testimonial-card-logo"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="testimonial-card-block-v3">
+                        <div class="testimonial-card-content-block-v3">
+                          <div class="testimonial-card-bottom-block">
+                            <div class="testimonial-card-star-block"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"></div>
+                            <div class="testimonial-card-text-block-v3">
+                              <h3 class="heading-style-6">Their approach helped us unlock new opportunities, align our leadership vision, and establish a structure capable of supporting long-term growth.</h3>
+                            </div>
+                          </div>
+                          <div class="testimonial-card-top-block-v3">
+                            <div class="testimonial-card-client-info-block">
+                              <div class="testimonial-sm-image-block"><img src="/images/Testimonial-Sm-Image-4.webp" loading="lazy" alt="testimonial-sm-image" class="testimonial-sm-image-v3"></div>
+                              <div class="testimonial-card-client-block">
+                                <div class="text-size-regular text-weight-medium text-color-white">Amanda Foster</div>
+                                <p class="text-size-small">Founder, ScaleLabs</p>
+                              </div>
+                            </div>
+                            <div class="testimonial-card-logo-block"><img src="/images/Testimonial-Logo-5.svg" loading="lazy" alt="testimonial-card-logo" class="testimonial-card-logo"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testimonial-card-row">
+                    <div class="testimonial-cards-row right">
+                      <div class="testimonial-card-block-v3">
+                        <div class="testimonial-card-content-block-v3">
+                          <div class="testimonial-card-bottom-block">
+                            <div class="testimonial-card-star-block"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"></div>
+                            <div class="testimonial-card-text-block-v3">
+                              <h3 class="heading-style-6">Within just six months, our revenue doubled, our leadership team became aligned, and we finally built a business model that can scale with confidence and drive lasting success.</h3>
+                            </div>
+                          </div>
+                          <div class="testimonial-card-top-block-v3">
+                            <div class="testimonial-card-client-info-block">
+                              <div class="testimonial-sm-image-block"><img src="/images/Testimonial-SM-Image-1_1Testimonial-SM-Image-1.webp" loading="lazy" alt="testimonial-sm-image" class="testimonial-sm-image-v3"></div>
+                              <div class="testimonial-card-client-block">
+                                <div class="text-size-regular text-weight-medium text-color-white">Michael Anderson</div>
+                                <p class="text-size-small">Founder, ScaleLabs</p>
+                              </div>
+                            </div>
+                            <div class="testimonial-card-logo-block"><img src="/images/Company-logo.svg" loading="lazy" alt="testimonial-card-logo" class="testimonial-card-logo"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="testimonial-card-block-v3">
+                        <div class="testimonial-card-content-block-v3">
+                          <div class="testimonial-card-bottom-block">
+                            <div class="testimonial-card-star-block"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"></div>
+                            <div class="testimonial-card-text-block-v3">
+                              <h3 class="heading-style-6">Thanks to their guidance, our revenue increased significantly, our leadership became more focused, and our business is now positioned for long-term growth.</h3>
+                            </div>
+                          </div>
+                          <div class="testimonial-card-top-block-v3">
+                            <div class="testimonial-card-client-info-block">
+                              <div class="testimonial-sm-image-block"><img src="/images/Testimonial-Sm-Image-2_2.webp" loading="lazy" alt="testimonial-sm-image" class="testimonial-sm-image-v3"></div>
+                              <div class="testimonial-card-client-block">
+                                <div class="text-size-regular text-weight-medium text-color-white">Robert Walker</div>
+                                <p class="text-size-small">Founder, ScaleLabs</p>
+                              </div>
+                            </div>
+                            <div class="testimonial-card-logo-block"><img src="/images/Testimonial-Logo-7.svg" loading="lazy" alt="testimonial-card-logo" class="testimonial-card-logo"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="testimonial-card-block-v3">
+                        <div class="testimonial-card-content-block-v3">
+                          <div class="testimonial-card-bottom-block">
+                            <div class="testimonial-card-star-block"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"></div>
+                            <div class="testimonial-card-text-block-v3">
+                              <h3 class="heading-style-6">Our organization experienced rapid growth, stronger decision-making, and a clear roadmap that gave us confidence to scale effectively.</h3>
+                            </div>
+                          </div>
+                          <div class="testimonial-card-top-block-v3">
+                            <div class="testimonial-card-client-info-block">
+                              <div class="testimonial-sm-image-block"><img src="/images/Testimonial-Sm-Image.webp" loading="lazy" alt="testimonial-sm-image" class="testimonial-sm-image-v3"></div>
+                              <div class="testimonial-card-client-block">
+                                <div class="text-size-regular text-weight-medium text-color-white">Kevin Turne</div>
+                                <p class="text-size-small">Founder, ScaleLabs</p>
+                              </div>
+                            </div>
+                            <div class="testimonial-card-logo-block"><img src="/images/Testimonial-Logo-6.svg" loading="lazy" alt="testimonial-card-logo" class="testimonial-card-logo"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="testimonial-card-block-v3">
+                        <div class="testimonial-card-content-block-v3">
+                          <div class="testimonial-card-bottom-block">
+                            <div class="testimonial-card-star-block"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"></div>
+                            <div class="testimonial-card-text-block-v3">
+                              <h3 class="heading-style-6">Within a short period, we improved profitability, unified our leadership team, and built systems that support consistent growth and performance.</h3>
+                            </div>
+                          </div>
+                          <div class="testimonial-card-top-block-v3">
+                            <div class="testimonial-card-client-info-block">
+                              <div class="testimonial-sm-image-block"><img src="/images/Testimonial-Sm-Image-3.webp" loading="lazy" alt="testimonial-sm-image" class="testimonial-sm-image-v3"></div>
+                              <div class="testimonial-card-client-block">
+                                <div class="text-size-regular text-weight-medium text-color-white">Rachel Morgan</div>
+                                <p class="text-size-small">Founder, ScaleLabs</p>
+                              </div>
+                            </div>
+                            <div class="testimonial-card-logo-block"><img src="/images/Testimonial-Logo.svg" loading="lazy" alt="testimonial-card-logo" class="testimonial-card-logo"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="testimonial-card-block-v3">
+                        <div class="testimonial-card-content-block-v3">
+                          <div class="testimonial-card-bottom-block">
+                            <div class="testimonial-card-star-block"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"></div>
+                            <div class="testimonial-card-text-block-v3">
+                              <h3 class="heading-style-6">The impact was immediate—our business became more efficient, our goals became clearer, and our growth strategy finally started working.</h3>
+                            </div>
+                          </div>
+                          <div class="testimonial-card-top-block-v3">
+                            <div class="testimonial-card-client-info-block">
+                              <div class="testimonial-sm-image-block"><img src="/images/Testimonial-Sm-Image-1_2.webp" loading="lazy" alt="testimonial-sm-image" class="testimonial-sm-image-v3"></div>
+                              <div class="testimonial-card-client-block">
+                                <div class="text-size-regular text-weight-medium text-color-white">Brian Richardson</div>
+                                <p class="text-size-small">Founder, ScaleLabs</p>
+                              </div>
+                            </div>
+                            <div class="testimonial-card-logo-block"><img src="/images/Testimonial-Logo-3.svg" loading="lazy" alt="testimonial-card-logo" class="testimonial-card-logo"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="testimonial-card-block-v3">
+                        <div class="testimonial-card-content-block-v3">
+                          <div class="testimonial-card-bottom-block">
+                            <div class="testimonial-card-star-block"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"></div>
+                            <div class="testimonial-card-text-block-v3">
+                              <h3 class="heading-style-6">In a matter of months, we gained strategic clarity, improved operational efficiency, and built a business foundation designed for sustainable success.</h3>
+                            </div>
+                          </div>
+                          <div class="testimonial-card-top-block-v3">
+                            <div class="testimonial-card-client-info-block">
+                              <div class="testimonial-sm-image-block"><img src="/images/Testimonial-Sm-Image_1.webp" loading="lazy" alt="testimonial-sm-image" class="testimonial-sm-image-v3"></div>
+                              <div class="testimonial-card-client-block">
+                                <div class="text-size-regular text-weight-medium text-color-white">Steven Cooper</div>
+                                <p class="text-size-small">Founder, ScaleLabs</p>
+                              </div>
+                            </div>
+                            <div class="testimonial-card-logo-block"><img src="/images/Testimonial-Logo-8.svg" loading="lazy" alt="testimonial-card-logo" class="testimonial-card-logo"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="testimonial-card-block-v3">
+                        <div class="testimonial-card-content-block-v3">
+                          <div class="testimonial-card-bottom-block">
+                            <div class="testimonial-card-star-block"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"><img src="/images/Testimonial-Star-4.svg" loading="lazy" alt="testimonial-card-star" class="testimonial-card-star"></div>
+                            <div class="testimonial-card-text-block-v3">
+                              <h3 class="heading-style-6">Their approach helped us unlock new opportunities, align our leadership vision, and establish a structure capable of supporting long-term growth.</h3>
+                            </div>
+                          </div>
+                          <div class="testimonial-card-top-block-v3">
+                            <div class="testimonial-card-client-info-block">
+                              <div class="testimonial-sm-image-block"><img src="/images/Testimonial-Sm-Image-4.webp" loading="lazy" alt="testimonial-sm-image" class="testimonial-sm-image-v3"></div>
+                              <div class="testimonial-card-client-block">
+                                <div class="text-size-regular text-weight-medium text-color-white">Amanda Foster</div>
+                                <p class="text-size-small">Founder, ScaleLabs</p>
+                              </div>
+                            </div>
+                            <div class="testimonial-card-logo-block"><img src="/images/Testimonial-Logo-5.svg" loading="lazy" alt="testimonial-card-logo" class="testimonial-card-logo"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section_case-study">
+          <div class="section-gap">
+            <div class="w-layout-blockcontainer container-main w-container">
+              <div class="case-study-wrapper">
+                <div class="section-heading-block">
+                  <div to-top-0="" class="section-subtitle-block bottom-space">
+                    <div class="subtitle-dot"></div>
+                    <div class="subtitle-text">Case Study</div>
+                  </div>
+                  <div class="section-title-block max-width-35">
+                    <h2 class="heading-style-2 text-align-center">From Stalled Growth to Market Leadership</h2>
+                  </div>
+                </div>
+                <div to-top-4="" class="case-study-content-block-v2">
+                  <div data-delay="4000" data-animation="cross" class="case-study-slider-block-v2 w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+                    <div class="case-study-slider-mask w-slider-mask">
+                      <div class="case-study-slide-block w-slide">
+                        <div class="case-study-collection-block w-dyn-list">
+                          <div role="list" class="case-study-collection-list w-dyn-items">
+                            {homeCaseStudies.slice(0, 1).map((study) => (
+                            <div role="listitem" class="case-study-collection-item w-dyn-item">
+                              <div class="case-study-card-item-block-v2">
+                                <div class="case-study-card-content-block-v2">
+                                  <div class="case-study-card-logo-block"><img src={study.logo} loading="lazy" alt={study.company} class="case-study-card-logo"></div>
+                                  <div class="case-study-card-text-block-v2">
+                                    <a href={`/case-studies/${study.slug}`} class="case-study-card-title-block w-inline-block">
+                                      <div class="heading-style-4 title-hover-v1">{study.title}</div>
+                                    </a>
+                                  </div>
+                                  <div class="case-study-card-stat-block-v2">
+                                    <div class="case-study-single-stat-block">
+                                      <div class="heading-style-4 _wf-counter">{study.pipelineGrowth}</div>
+                                      <p class="text-size-regular">Pipeline Growth</p>
+                                    </div>
+                                    <div class="case-study-stat-divider v2"></div>
+                                    <div class="case-study-single-stat-block">
+                                      <div class="heading-style-4 _wf-counter">{study.revenueGrowth}</div>
+                                      <p class="text-size-regular">Revenue Growth</p>
+                                    </div>
+                                  </div>
+                                  <div class="case-study-card-button-block-v2">
+                                    <a href={`/case-studies/${study.slug}`} class="link-button w-inline-block">
+                                      <div class="link-button-icon w-embed"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M16 12.083L12 15.833V8.33301L16 12.083Z" fill="currentColor"></path>
+                                          <path d="M2 11.333H12V12.833H2V11.333Z" fill="currentColor"></path>
+                                          <path d="M3.5 2.33301V12.333H2V2.33301H3.5Z" fill="currentColor"></path>
+                                        </svg></div>
+                                      <div class="link-button-text">View Case Study</div>
+                                    </a>
+                                  </div>
+                                </div>
+                                <a href={`/case-studies/${study.slug}`} class="case-study-card-image-block-v2 w-inline-block"><img src={study.thumbnail} loading="lazy" alt="case-study-card-image" class="case-study-card-image-v2"><img src="/images/Service-Image-Overlay.svg" loading="lazy" alt="Service Image Overlay" class="case-study-card-image-overlay"></a>
+                              </div>
+                            </div>
+                            ))}
+                          </div>
+                          {homeCaseStudies.slice(0, 1).length === 0 && (
+                          <div class="w-dyn-empty">
+                            <div>No items found.</div>
+                          </div>
+                          )}
+                        </div>
+                      </div>
+                      <div class="case-study-slide-block w-slide">
+                        <div class="case-study-collection-block w-dyn-list">
+                          <div role="list" class="case-study-collection-list w-dyn-items">
+                            {homeCaseStudies.slice(1, 2).map((study) => (
+                            <div role="listitem" class="case-study-collection-item w-dyn-item">
+                              <div class="case-study-card-item-block-v2">
+                                <div class="case-study-card-content-block-v2">
+                                  <div class="case-study-card-logo-block"><img src={study.logo} loading="lazy" alt={study.company} class="case-study-card-logo"></div>
+                                  <div class="case-study-card-text-block">
+                                    <a href={`/case-studies/${study.slug}`} class="case-study-card-title-block w-inline-block">
+                                      <div class="heading-style-4 title-hover-v1">{study.title}</div>
+                                    </a>
+                                  </div>
+                                  <div class="case-study-card-stat-block-v2">
+                                    <div class="case-study-single-stat-block">
+                                      <div class="heading-style-4 _wf-counter">{study.pipelineGrowth}</div>
+                                      <p class="text-size-regular">Pipeline Growth</p>
+                                    </div>
+                                    <div class="case-study-stat-divider v2"></div>
+                                    <div class="case-study-single-stat-block">
+                                      <div class="heading-style-4 _wf-counter">{study.revenueGrowth}</div>
+                                      <p class="text-size-regular">Revenue Growth</p>
+                                    </div>
+                                  </div>
+                                  <div class="case-study-card-button-block-v2">
+                                    <a href={`/case-studies/${study.slug}`} class="link-button w-inline-block">
+                                      <div class="link-button-icon w-embed"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M16 12.083L12 15.833V8.33301L16 12.083Z" fill="currentColor"></path>
+                                          <path d="M2 11.333H12V12.833H2V11.333Z" fill="currentColor"></path>
+                                          <path d="M3.5 2.33301V12.333H2V2.33301H3.5Z" fill="currentColor"></path>
+                                        </svg></div>
+                                      <div class="link-button-text">View Case Study</div>
+                                    </a>
+                                  </div>
+                                </div>
+                                <a href={`/case-studies/${study.slug}`} class="case-study-card-image-block-v2 w-inline-block"><img src={study.thumbnail} loading="lazy" alt="case-study-card-image" class="case-study-card-image-v2"><img src="/images/Service-Image-Overlay.svg" loading="lazy" alt="Service Image Overlay" class="case-study-card-image-overlay"></a>
+                              </div>
+                            </div>
+                            ))}
+                          </div>
+                          {homeCaseStudies.slice(1, 2).length === 0 && (
+                          <div class="w-dyn-empty">
+                            <div>No items found.</div>
+                          </div>
+                          )}
+                        </div>
+                      </div>
+                      <div class="case-study-slide-block w-slide">
+                        <div class="case-study-collection-block w-dyn-list">
+                          <div role="list" class="case-study-collection-list w-dyn-items">
+                            {homeCaseStudies.slice(2, 3).map((study) => (
+                            <div role="listitem" class="case-study-collection-item w-dyn-item">
+                              <div class="case-study-card-item-block-v2">
+                                <div class="case-study-card-content-block-v2">
+                                  <div class="case-study-card-logo-block"><img src={study.logo} loading="lazy" alt={study.company} class="case-study-card-logo"></div>
+                                  <div class="case-study-card-text-block-v2">
+                                    <a href={`/case-studies/${study.slug}`} class="case-study-card-title-block w-inline-block">
+                                      <div class="heading-style-4 title-hover-v1">{study.title}</div>
+                                    </a>
+                                  </div>
+                                  <div class="case-study-card-stat-block-v2">
+                                    <div class="case-study-single-stat-block">
+                                      <div class="heading-style-4 _wf-counter">{study.pipelineGrowth}</div>
+                                      <p class="text-size-regular">Pipeline Growth</p>
+                                    </div>
+                                    <div class="case-study-stat-divider v2"></div>
+                                    <div class="case-study-single-stat-block">
+                                      <div class="heading-style-4 _wf-counter">{study.revenueGrowth}</div>
+                                      <p class="text-size-regular">Revenue Growth</p>
+                                    </div>
+                                  </div>
+                                  <div class="case-study-card-button-block-v2">
+                                    <a href={`/case-studies/${study.slug}`} class="link-button w-inline-block">
+                                      <div class="link-button-icon w-embed"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M16 12.083L12 15.833V8.33301L16 12.083Z" fill="currentColor"></path>
+                                          <path d="M2 11.333H12V12.833H2V11.333Z" fill="currentColor"></path>
+                                          <path d="M3.5 2.33301V12.333H2V2.33301H3.5Z" fill="currentColor"></path>
+                                        </svg></div>
+                                      <div class="link-button-text">View Case Study</div>
+                                    </a>
+                                  </div>
+                                </div>
+                                <a href={`/case-studies/${study.slug}`} class="case-study-card-image-block-v2 w-inline-block"><img src={study.thumbnail} loading="lazy" alt="case-study-card-image" class="case-study-card-image-v2"><img src="/images/Service-Image-Overlay.svg" loading="lazy" alt="Service Image Overlay" class="case-study-card-image-overlay"></a>
+                              </div>
+                            </div>
+                            ))}
+                          </div>
+                          {homeCaseStudies.slice(2, 3).length === 0 && (
+                          <div class="w-dyn-empty">
+                            <div>No items found.</div>
+                          </div>
+                          )}
+                        </div>
+                      </div>
+                      <div class="case-study-slide-block w-slide">
+                        <div class="case-study-collection-block w-dyn-list">
+                          <div role="list" class="case-study-collection-list w-dyn-items">
+                            {homeCaseStudies.slice(3, 4).map((study) => (
+                            <div role="listitem" class="case-study-collection-item w-dyn-item">
+                              <div class="case-study-card-item-block-v2">
+                                <div class="case-study-card-content-block-v2">
+                                  <div class="case-study-card-logo-block"><img src={study.logo} loading="lazy" alt={study.company} class="case-study-card-logo"></div>
+                                  <div class="case-study-card-text-block-v2">
+                                    <a href={`/case-studies/${study.slug}`} class="case-study-card-title-block w-inline-block">
+                                      <div class="heading-style-4 title-hover-v1">{study.title}</div>
+                                    </a>
+                                  </div>
+                                  <div class="case-study-card-stat-block-v2">
+                                    <div class="case-study-single-stat-block">
+                                      <div class="heading-style-4 _wf-counter">{study.pipelineGrowth}</div>
+                                      <p class="text-size-regular">Pipeline Growth</p>
+                                    </div>
+                                    <div class="case-study-stat-divider v2"></div>
+                                    <div class="case-study-single-stat-block">
+                                      <div class="heading-style-4 _wf-counter">{study.revenueGrowth}</div>
+                                      <p class="text-size-regular">Revenue Growth</p>
+                                    </div>
+                                  </div>
+                                  <div class="case-study-card-button-block-v2">
+                                    <a href={`/case-studies/${study.slug}`} class="link-button w-inline-block">
+                                      <div class="link-button-icon w-embed"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M16 12.083L12 15.833V8.33301L16 12.083Z" fill="currentColor"></path>
+                                          <path d="M2 11.333H12V12.833H2V11.333Z" fill="currentColor"></path>
+                                          <path d="M3.5 2.33301V12.333H2V2.33301H3.5Z" fill="currentColor"></path>
+                                        </svg></div>
+                                      <div class="link-button-text">View Case Study</div>
+                                    </a>
+                                  </div>
+                                </div>
+                                <a href={`/case-studies/${study.slug}`} class="case-study-card-image-block-v2 w-inline-block"><img src={study.thumbnail} loading="lazy" alt="case-study-card-image" class="case-study-card-image-v2"><img src="/images/Service-Image-Overlay.svg" loading="lazy" alt="Service Image Overlay" class="case-study-card-image-overlay"></a>
+                              </div>
+                            </div>
+                            ))}
+                          </div>
+                          {homeCaseStudies.slice(3, 4).length === 0 && (
+                          <div class="w-dyn-empty">
+                            <div>No items found.</div>
+                          </div>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                    <div class="case-study-slider-arrow-v2 left w-slider-arrow-left">
+                      <div class="case-study-slider-icon w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_6146_5846)">
+                            <path d="M4.5 12H21M10.5 18.375L4.125 12L10.5 5.625" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></path>
+                          </g>
+                          <defs>
+                            <clippath id="clip0_6146_5846">
+                              <rect width="24" height="24" fill="currentColor" transform="matrix(-1 0 0 -1 24 24)"></rect>
+                            </clippath>
+                          </defs>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="case-study-slider-arrow-v2 right w-slider-arrow-right">
+                      <div class="case-study-slider-icon w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_6146_5851)">
+                            <path d="M19.5 12H3M13.5 5.625L19.875 12L13.5 18.375" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></path>
+                          </g>
+                          <defs>
+                            <clippath id="clip0_6146_5851">
+                              <rect width="24" height="24" fill="currentColor"></rect>
+                            </clippath>
+                          </defs>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="display-none w-slider-nav w-round w-num"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section_blog">
+          <div class="section-gap">
+            <div class="w-layout-blockcontainer container-main w-container">
+              <div class="blog-wrapper">
+                <div class="section-heading-block">
+                  <div to-top-0="" class="section-subtitle-block bottom-space">
+                    <div class="subtitle-dot"></div>
+                    <div class="subtitle-text">Blogs</div>
+                  </div>
+                  <div class="section-title-block max-width-25">
+                    <h2 class="heading-style-2 text-align-center">Stay up to date with our Journal</h2>
+                  </div>
+                </div>
+                <div class="blog-content-block">
+                  <div class="blog-cms-collection-block-v2 is-desktop">
+                    <div class="blog-collection-block w-dyn-list">
+                      <div role="list" class="blog-collection-list-v2 w-dyn-items">
+                        {homeBlogs.map((post) => (
+                        <div role="listitem" class="blog-collection-item w-dyn-item">
+                          <div to-top-4="" class="blog-item-card-block-v2">
+                            <div class="blog-item-content-block-v2">
+                              <div class="blog-item-top-block">
+                                <div class="blog-item-category-block">
+                                  <div class="blog-item-category-dot"></div>
+                                  <p class="text-size-small text-weight-medium text-color-white">{post.category}</p>
+                                </div>
+                                <div class="blog-item-image-block-v2"><img loading="lazy" src={post.thumbnail} alt="blog-item-image" class="blog-item-image-v2"></div>
+                              </div>
+                              <div class="blog-item-bottom-block-v2">
+                                <div class="blog-item-text-block-v2">
+                                  <div class="blog-item-info-block">
+                                    <div class="blog-item-date-block">
+                                      <div class="blog-item-date">{formatDate(post.publishedAt)}</div>
+                                    </div>
+                                  </div>
+                                  <div class="blog-item-title-block">
+                                    <div class="heading-style-5 title-hover">{post.title}</div>
+                                  </div>
+                                </div>
+                                <div class="blog-item-button-block-v2">
+                                  <a href={`/blog/${post.slug}`} class="link-button w-inline-block">
+                                    <div class="link-button-icon w-embed"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16 12.083L12 15.833V8.33301L16 12.083Z" fill="currentColor"></path>
+                                        <path d="M2 11.333H12V12.833H2V11.333Z" fill="currentColor"></path>
+                                        <path d="M3.5 2.33301V12.333H2V2.33301H3.5Z" fill="currentColor"></path>
+                                      </svg></div>
+                                    <div class="link-button-text">Get consulting</div>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="blog-item-hover-block">
+                              <div class="blog-item-hover-image-block-v2"><img loading="lazy" src={post.thumbnail} alt="blog-item-image" class="blog-item-image-v2">
+                                <div class="blog-item-image-overlay-v2"></div>
+                              </div>
+                              <div class="blog-item-top-block">
+                                <div class="blog-item-category-block">
+                                  <div class="blog-item-category-dot"></div>
+                                  <p class="text-size-small text-weight-medium text-color-white">{post.category}</p>
+                                </div>
+                              </div>
+                              <div class="blog-item-bottom-block-v2">
+                                <div class="blog-item-text-block-v2">
+                                  <div class="blog-item-info-block">
+                                    <div class="blog-item-date-block">
+                                      <div class="blog-item-date">{formatDate(post.publishedAt)}</div>
+                                    </div>
+                                  </div>
+                                  <a aria-label="blog-item-title-block" href={`/blog/${post.slug}`} class="blog-item-title-block w-inline-block">
+                                    <div class="heading-style-5 title-hover-v2">{post.title}</div>
+                                  </a>
+                                </div>
+                                <div class="blog-item-button-block-v2">
+                                  <a href={`/blog/${post.slug}`} class="link-button w-inline-block">
+                                    <div class="link-button-icon w-embed"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16 12.083L12 15.833V8.33301L16 12.083Z" fill="currentColor"></path>
+                                        <path d="M2 11.333H12V12.833H2V11.333Z" fill="currentColor"></path>
+                                        <path d="M3.5 2.33301V12.333H2V2.33301H3.5Z" fill="currentColor"></path>
+                                      </svg></div>
+                                    <div class="link-button-text">Get consulting</div>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        ))}
+                      </div>
+                      {homeBlogs.length === 0 && (
+                      <div class="w-dyn-empty">
+                        <div>No items found.</div>
+                      </div>
+                      )}
+                    </div>
+                  </div>
+                  <div class="blog-cms-collection-block is-mobile">
+                    <div class="blog-collection-block w-dyn-list">
+                      <div role="list" class="blog-collection-list w-dyn-items">
+                        {homeBlogs.map((post) => (
+                        <div role="listitem" class="blog-collection-item w-dyn-item">
+                          <a href={`/blog/${post.slug}`} class="blog-item-card-block w-inline-block">
+                            <div class="blog-item-image-block"><img loading="lazy" src={post.thumbnail} alt="blog-item-image" class="blog-item-image"></div>
+                            <div class="blog-item-content-block">
+                              <div class="blog-item-title-block">
+                                <div class="heading-style-5">This is some text inside of a div block.</div>
+                              </div>
+                              <div class="blog-item-info-block">
+                                <div class="blog-item-category-block">
+                                  <div class="blog-item-category-dot"></div>
+                                  <p class="text-size-small text-weight-medium text-color-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                                </div>
+                                <div class="blog-item-date-block">
+                                  <div class="blog-item-date">This is some text inside of a div block.</div>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        ))}
+                      </div>
+                      {homeBlogs.length === 0 && (
+                      <div class="w-dyn-empty">
+                        <div>No items found.</div>
+                      </div>
+                      )}
+                    </div>
+                  </div>
+                  <div to-top-2="" class="section-bottom-block">
+                    <div class="section-bottom-text-block">
+                      <p class="text-size-regular text-color-white-800">Explore more news and insight</p>
+                    </div>
+                    <a href="/blog" class="link-button w-inline-block">
+                      <div class="link-button-icon w-embed"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M16 12.083L12 15.833V8.33301L16 12.083Z" fill="currentColor"></path>
+                          <path d="M2 11.333H12V12.833H2V11.333Z" fill="currentColor"></path>
+                          <path d="M3.5 2.33301V12.333H2V2.33301H3.5Z" fill="currentColor"></path>
+                        </svg></div>
+                      <div class="link-button-text">Visit Journal</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section data-wf-component-id="53cb5297-990c-9364-7ad8-fd5810eb3b02" data-wf-variant-state="base" class="section_cta">
+          <div class="cta-inner-block">
+            <div class="cta-bg-block">
+              <div class="section-gap">
+                <div class="w-layout-blockcontainer container-main w-container">
+                  <div class="cta-wrapper">
+                    <div class="cta-cotnent-block">
+                      <div class="cta-title-block">
+                        <div class="overflow-hidden">
+                          <h2 class="cta-title is-1">Let’s Start Your </h2>
+                        </div>
+                        <div class="overflow-hidden">
+                          <h2 class="cta-title is-2">Growth <em class="heading-style-1-ht">Journey</em></h2>
+                        </div>
+                      </div>
+                      <div class="section-summary-block display-none">
+                        <p class="text-size-large text-align-middle text-color-white-8">Consulting that translates innovation into outcomes.</p>
+                      </div>
+                      <div class="overflow-hidden">
+                        <div class="cta-button-block">
+                          <a href="/contact-v1" data-wf--white-button--variant="main-size" data-wf-component-id="7f51300f-9481-7764-372f-282224688a1e" data-wf-variant-state="base" class="white-button w-inline-block">
+                            <div class="button-dot-block dark"></div>
+                            <div class="button-text-block">
+                              <div class="button-text">Contact Us</div>
+                            </div>
+                          </a>
+                          <a href="#" class="link-button w-inline-block">
+                            <div class="link-button-icon w-embed"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 12.083L12 15.833V8.33301L16 12.083Z" fill="currentColor"></path>
+                                <path d="M2 11.333H12V12.833H2V11.333Z" fill="currentColor"></path>
+                                <path d="M3.5 2.33301V12.333H2V2.33301H3.5Z" fill="currentColor"></path>
+                              </svg></div>
+                            <div class="link-button-text">Get consulting</div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+</BaseLayout>

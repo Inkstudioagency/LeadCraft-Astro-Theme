@@ -1,0 +1,14 @@
+# Normalise line endings so the theme is identical on every platform.
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.avif binary
+*.ico binary
+*.mp4 binary
+*.webm binary
+*.otf binary
+*.woff binary
+*.woff2 binary

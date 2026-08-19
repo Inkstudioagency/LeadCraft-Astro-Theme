@@ -1,0 +1,259 @@
+---
+/**
+ * Site footer: newsletter form, link columns, contact block and bottom bar.
+ * Content comes from `src/config/site.json` and `src/config/menu.json`.
+ */
+import menu from '../config/menu.json';
+import site from '../config/site.json';
+import { currentAria, currentClass } from '../lib/nav';
+
+interface Props {
+  /** Webflow stamps the page id on every form; kept so exported forms round-trip. */
+  wfPageId: string;
+}
+
+const { wfPageId } = Astro.props;
+const path = Astro.url.pathname;
+const WF_ID = '88d59171-f15e-551c-a129-0db9a67e1ec7';
+---
+
+<footer data-wf-component-id={WF_ID} data-wf-variant-state="base" class="section_footer">
+  <div class="w-layout-blockcontainer container-main w-container">
+    <div class="footer-wrapper">
+      <div class="footer-newsletter-block">
+        <div class="section-heading-block align-left bottom-gap-none">
+          <div to-top-0="" class="section-subtitle-block bottom-space">
+            <div class="subtitle-dot"></div>
+            <div class="subtitle-text">{site.newsletter.subtitle}</div>
+          </div>
+          <div class="section-title-block max-width-38">
+            <h2 class="heading-style-2">{site.newsletter.title}</h2>
+          </div>
+        </div>
+        <div to-top-4="" class="footer-newsletter-form-block w-form">
+          <form
+            id="email-form"
+            name="email-form"
+            data-name="Email Form"
+            method="get"
+            class="footer-newsletter-form-inner"
+            data-wf-page-id={wfPageId}
+            data-wf-element-id="68aa3d0e-11f8-53b7-7af2-f1ab8f33fa79"
+          >
+            <div class="footer-newsletter-form-content">
+              <input
+                class="footer-newsletter-field w-input"
+                maxlength="256"
+                name="email"
+                data-name="Email"
+                aria-label="newsletter"
+                placeholder={site.newsletter.placeholder}
+                type="email"
+                id="email"
+                required=""
+              /><input
+                type="submit"
+                data-wait="Please wait..."
+                class="footer-newsletter-button form-button w-button"
+                value={site.newsletter.button}
+              />
+            </div>
+          </form>
+          <div class="success-message w-form-done">
+            <div>{site.newsletter.success}</div>
+          </div>
+          <div class="w-form-fail">
+            <div>{site.newsletter.error}</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-content-block">
+        <div class="footer-main-content-block">
+          <div class="footer-info-content-block">
+            <div to-top-2="" class="footer-info-text-block">
+              <a
+                href={menu.brand}
+                aria-current={currentAria(menu.brand, path)}
+                class={currentClass('footer-logo-block w-inline-block', menu.brand, path)}
+                ><img src={site.logo.src} loading="lazy" alt="footer-logo" class="footer-logo" /></a
+              >
+              <div class="footer-summary-block">
+                <p class="text-size-regular text-color-white-800">{site.footerSummary}</p>
+              </div>
+            </div>
+            <div to-top-0="" class="footer-social-info-block">
+              <a
+                aria-label="footer-social-icon-block"
+                href={site.social.x}
+                target="_blank"
+                class="footer-social-icon-block w-inline-block"
+              >
+                <div class="footer-social-icon w-embed">
+                  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3 21L10.5484 13.4516M13.4516 10.5484L21 21H16L10.5484 13.4516L3 3H8L13.4516 10.5484ZM21 3L13.4516 10.5484"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+              </a>
+              <a
+                aria-label="footer-social-icon-block"
+                href={site.social.linkedin}
+                target="_blank"
+                class="footer-social-icon-block w-inline-block"
+              >
+                <div class="footer-social-icon w-embed">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M21.334 10.668C23.4557 10.668 25.4905 11.5108 26.9908 13.0111C28.4911 14.5114 29.334 16.5462 29.334 18.668V28.0013H24.0007V18.668C24.0007 17.9607 23.7197 17.2824 23.2196 16.7824C22.7195 16.2823 22.0412 16.0013 21.334 16.0013C20.6267 16.0013 19.9485 16.2823 19.4484 16.7824C18.9483 17.2824 18.6673 17.9607 18.6673 18.668V28.0013H13.334V18.668C13.334 16.5462 14.1768 14.5114 15.6771 13.0111C17.1774 11.5108 19.2123 10.668 21.334 10.668Z"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"></path>
+                    <path
+                      d="M8.0013 12H2.66797V28H8.0013V12Z"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"></path>
+                    <path
+                      d="M5.33073 8.0013C6.80349 8.0013 7.9974 6.80739 7.9974 5.33464C7.9974 3.86188 6.80349 2.66797 5.33073 2.66797C3.85797 2.66797 2.66406 3.86188 2.66406 5.33464C2.66406 6.80739 3.85797 8.0013 5.33073 8.0013Z"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+              </a>
+              <a
+                aria-label="footer-social-icon-block"
+                href={site.social.github}
+                target="_blank"
+                class="footer-social-icon-block w-inline-block"
+              >
+                <div class="footer-social-icon w-embed">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M20.0023 29.3346V24.0013C20.1878 22.331 19.7089 20.6548 18.669 19.3346C22.669 19.3346 26.669 16.668 26.669 12.0013C26.7757 10.3346 26.309 8.69464 25.3357 7.33464C25.709 5.8013 25.709 4.2013 25.3357 2.66797C25.3357 2.66797 24.0023 2.66797 21.3357 4.66797C17.8157 4.0013 14.189 4.0013 10.669 4.66797C8.00233 2.66797 6.66899 2.66797 6.66899 2.66797C6.26899 4.2013 6.26899 5.8013 6.66899 7.33464C5.69816 8.68915 5.22696 10.3384 5.33566 12.0013C5.33566 16.668 9.33566 19.3346 13.3357 19.3346C12.8157 19.988 12.429 20.7346 12.2023 21.5346C11.9757 22.3346 11.909 23.1746 12.0023 24.0013V29.3346"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"></path>
+                    <path
+                      d="M11.9993 23.9987C5.98602 26.6654 5.33268 21.332 2.66602 21.332"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+              </a>
+              <a
+                aria-label="footer-social-icon-block"
+                href={site.social.instagram}
+                target="_blank"
+                class="footer-social-icon-block w-inline-block"
+              >
+                <div class="footer-social-icon w-embed">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M22.6641 2.66797H9.33073C5.64883 2.66797 2.66406 5.65274 2.66406 9.33463V22.668C2.66406 26.3499 5.64883 29.3346 9.33073 29.3346H22.6641C26.346 29.3346 29.3307 26.3499 29.3307 22.668V9.33463C29.3307 5.65274 26.346 2.66797 22.6641 2.66797Z"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"></path>
+                    <path
+                      d="M21.3336 15.1604C21.4981 16.2701 21.3086 17.4034 20.7919 18.3991C20.2753 19.3948 19.4578 20.2023 18.4558 20.7066C17.4537 21.211 16.3182 21.3865 15.2106 21.2083C14.1031 21.0301 13.0799 20.5072 12.2867 19.7139C11.4935 18.9207 10.9706 17.8976 10.7924 16.79C10.6141 15.6825 10.7897 14.5469 11.294 13.5449C11.7984 12.5429 12.6058 11.7254 13.6016 11.2087C14.5973 10.6921 15.7306 10.5025 16.8403 10.6671C17.9722 10.8349 19.0201 11.3624 19.8292 12.1715C20.6383 12.9806 21.1657 14.0285 21.3336 15.1604Z"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"></path>
+                    <path
+                      d="M23.334 8.66797H23.3473"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="footer-link-content-block">
+            {
+              menu.footer.map((column) => (
+                <div to-top-4="" class="footer-link-block">
+                  <div class="footer-link-title">{column.title}</div>
+                  {column.links.map((link) => (
+                    <a
+                      href={link.href}
+                      aria-current={currentAria(link.href, path)}
+                      class={currentClass('footer-link w-inline-block', link.href, path)}
+                    >
+                      <div class="link-dot" />
+                      <div class="link-text is-1">
+                        {link.label}
+                        {'break' in link && link.break ? (
+                          <br data-wf-component-id={WF_ID} data-wf-variant-state="base" />
+                        ) : null}
+                      </div>
+                    </a>
+                  ))}
+                </div>
+              ))
+            }
+            <div to-top-6="" class="footer-contact-info-block">
+              <div class="footer-link-title">Contact</div>
+              <div class="footer-contact-single-block">
+                <div class="footer-contact-text-block">
+                  <div class="paragraph-xsmall text-color-white">{site.contact.emailLabel}</div>
+                  <a href={site.contact.emailHref} class="footer-contact-link">{site.contact.email}</a>
+                </div>
+              </div>
+              <div class="footer-contact-single-block">
+                <div class="footer-contact-text-block">
+                  <div class="paragraph-xsmall text-color-white">{site.contact.phoneLabel}</div>
+                  <a href={site.contact.phoneHref} class="footer-contact-link">{site.contact.phone}</a>
+                </div>
+              </div>
+              <div class="footer-contact-single-block">
+                <div class="footer-contact-text-block">
+                  <div class="paragraph-xsmall text-color-white">{site.contact.addressLabel}</div>
+                  <div class="footer-contact-link hover-none">{site.contact.address}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom-block">
+        <div to-top-2="" class="footer-bottom-content-block">
+          <div class="copyright-text-block">
+            <p class="paragraph-small text-color-white mobile-middle">{site.copyright}</p>
+          </div>
+          <div class="footer-bottom-link-block">
+            <p class="paragraph-small text-color-white mobile-middle">
+              Powered by <a
+                href="https://astro.build/themes/"
+                target="_blank"
+                class="text-color-white text-weight-semibold hover">Astro</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="footer-logo-content-block">
+          <img
+            src={site.footerLogo.src}
+            loading="lazy"
+            alt={site.footerLogo.alt}
+            class="footer-logo-text is-mobile"
+          />
+          <div class="footer-logo-text">{site.name}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

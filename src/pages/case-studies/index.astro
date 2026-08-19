@@ -1,0 +1,88 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCaseStudies } from '../../lib/content';
+
+const caseStudies = await getCaseStudies();
+---
+
+<BaseLayout
+  wfPageId="6a84225ef14a6cfa777048b4"
+  title="Case Studies || Consulting Website Astro Theme"
+  description="Leadcraft is a premium Business Consulting Astro theme for consultants, agencies, and advisors to showcase services and generate leads."
+  hidden=".cta-inner-block, .cta-title.is-1, .cta-title.is-2, .cta-button-block, .link-button-icon, .blog-collection-block.is-1, .blog-collection-block.is-2, .blog-collection-block.is-3, [to-top-8], .timeline-ht-liner-block-v2, .timeline-pointer-block-v2.is-1, .timeline-pointer-block-v2.is-2, .timeline-pointer-block-v2.is-3, .timeline-pointer-block-v2.is-4, .team-cards-inner-block-v3, .team-scroll-liner-ht, .our-value-single-card-block-v3.is-1, .our-value-single-card-block-v3.is-2, .our-value-single-card-block-v3.is-3, .about-title-two, .about-title-overlay.is-1, .about-title-overlay.is-2, .about-title-overlay.is-3, .about-title-overlay.is-4, .button-text-block, .button-dot-block.dark, .footer-logo-content-block, [to-top-6], .heading-style-1-main, .heading-style-1-ht, .button-icon, [to-top-0], .button-dot-block, .heading-style-2, .faq-icon-line.is-2, [details-page-title], [to-top-4], [to-top-2], .link-dot, .link-text, [to-top-0s], [to-top-2s], [to-top-4s], [to-top-6s], [to-top-8s]"
+>
+    <main class="main-wrapper">
+      <section class="section_breadcrumb">
+        <div class="hero-gap">
+          <div class="w-layout-blockcontainer container-main w-container">
+            <div class="breadcrumb-wrapper">
+              <div class="breadcrumb-content-block">
+                <div class="breadcrumb-title-block max-width-34">
+                  <h1 class="heading-style-1 title-animation"><span class="heading-style-1-main">Real Results,</span> <span class="heading-style-1-ht">Real Stories</span></h1>
+                </div>
+                <div to-top-2s="" class="breadcrumb-summary-block">
+                  <p class="text-size-regular text-color-white">Explore how founders, executives, and growing teams turned challenges into measurable success through our proven coaching frameworks.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="breadcrumb-bg-block"><img src="/images/breadcrumb-bg-dot.svg" loading="lazy" alt="breadcrumb-bg-dot" class="breadcrumb-bg-dot"><img src="/images/breadcrumb-bg-noise.svg" loading="lazy" alt="breadcrumb-bg-noise" class="breadcrumb-bg-noise"><img src="/images/Portfolio-Hero-BG_1Portfolio-Hero-BG.webp" loading="lazy" sizes="(max-width: 1439px) 100vw, 1440px" srcset="/images/Portfolio-Hero-BG_1-p-500.webp 500w, /images/Portfolio-Hero-BG_1-p-800.webp 800w, /images/Portfolio-Hero-BG_1-p-1080.webp 1080w, /images/Portfolio-Hero-BG_1Portfolio-Hero-BG.webp 1440w" alt="breadcrumb-bg-image" class="breadcrumb-bg-image"></div>
+      </section>
+      <section class="section_case-study">
+        <div class="section-gap">
+          <div class="w-layout-blockcontainer container-main w-container">
+            <div class="case-study-wrapper">
+              <div class="case-study-content-block fill">
+                <div class="case-study-collection-block w-dyn-list">
+                  <div role="list" class="case-study-collection-list is-verticle w-dyn-items">
+                    {caseStudies.map((study) => (
+                    <div role="listitem" class="case-study-collection-item w-dyn-item">
+                      <div to-top-2="" class="case-study-card-item-block-v1">
+                        <div class="case-study-card-image-block-v1"><img src={study.thumbnail} loading="lazy" alt="case-study-card-image" class="case-study-card-image-v1"></div>
+                        <div class="case-study-card-content-block-v1">
+                          <div class="case-study-card-text-block">
+                            <div class="case-study-card-title-block">
+                              <div class="heading-style-4">{study.title}</div>
+                            </div>
+                            <div class="case-study-card-button-block-v1">
+                              <a href={`/case-studies/${study.slug}`} data-wf--white-button--variant="main-size" data-wf-component-id="7f51300f-9481-7764-372f-282224688a1e" data-wf-variant-state="base" class="white-button w-inline-block">
+                                <div class="button-dot-block dark"></div>
+                                <div class="button-text-block">
+                                  <div class="button-text">View case study</div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="case-study-card-right-block">
+                            <div class="case-study-card-logo-block"><img src={study.logo} loading="lazy" alt={study.company} class="case-study-card-logo"></div>
+                            <div class="case-study-card-stat-block-v1">
+                              <div class="case-study-single-stat-block">
+                                <div class="heading-style-4 text-color-primary-900 _wf-counter">{study.pipelineGrowth}</div>
+                                <p class="text-size-regular text-color-gray-600">Pipeline Growth</p>
+                              </div>
+                              <div class="case-study-stat-divider v2"></div>
+                              <div class="case-study-single-stat-block">
+                                <div class="heading-style-4 text-color-primary-900 _wf-counter">{study.revenueGrowth}</div>
+                                <p class="text-size-regular text-color-gray-600">Revenue Growth</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    ))}
+                  </div>
+                  {caseStudies.length === 0 && (
+                  <div class="w-dyn-empty">
+                    <div>No items found.</div>
+                  </div>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+</BaseLayout>

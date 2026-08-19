@@ -1,0 +1,15 @@
+{
+  "home": {
+    "services": 4,
+    "caseStudies": 4,
+    "blogs": 3
+  },
+  "about": {
+    "blogs": 3
+  },
+  "related": {
+    "services": 3,
+    "caseStudies": 3,
+    "blogs": 3
+  }
+}

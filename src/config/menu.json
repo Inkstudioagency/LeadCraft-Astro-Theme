@@ -1,0 +1,66 @@
+{
+  "brand": "/home-v1",
+  "main": [
+    { "label": "Home", "href": "/home-v1" },
+    { "label": "About", "href": "/about-v1" },
+    { "label": "Services", "href": "/services" },
+    { "label": "Blog", "href": "/blog" }
+  ],
+  "dropdown": [
+    {
+      "title": "Main pages",
+      "links": [
+        { "label": "Home V1", "href": "/home-v1" },
+        { "label": "Home V2", "href": "/home-v2" },
+        { "label": "Home V3", "href": "/home-v3" },
+        { "label": "About V1", "href": "/about-v1" },
+        { "label": "About V2", "href": "/about-v2" },
+        { "label": "About V3", "href": "/about-v3" }
+      ]
+    },
+    {
+      "title": "Others Pages",
+      "links": [
+        { "label": "Contact V1", "href": "/contact-v1" },
+        { "label": "Contact V2", "href": "/contact-v2" },
+        { "label": "Contact V3", "href": "/contact-v3" },
+        { "label": "Services", "href": "/services" },
+        { "label": "Blog", "href": "/blog" },
+        { "label": "Case Studies", "href": "/case-studies" }
+      ]
+    },
+    {
+      "title": "Utility Pages",
+      "links": [
+        { "label": "Style Guide", "href": "/style-guide" },
+        { "label": "Not Found", "href": "/404" }
+      ]
+    }
+  ],
+  "contact": { "label": "Contact", "href": "/contact-v1" },
+  "cta": { "label": "Get Started", "href": "/contact-v1" },
+  "footer": [
+    {
+      "title": "Main Pages",
+      "links": [
+        { "label": "Home V1", "href": "/home-v1" },
+        { "label": "Home V2", "href": "/home-v2" },
+        { "label": "Home V3", "href": "/home-v3" },
+        { "label": "About V1", "href": "/about-v1" },
+        { "label": "About V2", "href": "/about-v2" },
+        { "label": "About V3", "href": "/about-v3" }
+      ]
+    },
+    {
+      "title": "Others pages",
+      "links": [
+        { "label": "Contact V1", "href": "/contact-v1" },
+        { "label": "Contact V2", "href": "/contact-v2" },
+        { "label": "Contact V3", "href": "/contact-v3", "break": true },
+        { "label": "Services", "href": "/services" },
+        { "label": "Case Studies", "href": "/case-studies" },
+        { "label": "Blog", "href": "/blog" }
+      ]
+    }
+  ]
+}

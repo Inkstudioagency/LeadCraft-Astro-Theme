@@ -1,0 +1,203 @@
+---
+/**
+ * Site navigation. Links come from `src/config/menu.json`; the current-page
+ * state is derived from the URL the same way Webflow's exporter marked it.
+ */
+import menu from '../config/menu.json';
+import site from '../config/site.json';
+import { currentAria, currentClass } from '../lib/nav';
+
+const path = Astro.url.pathname;
+---
+
+<header class="section_header">
+  <div
+    data-animation="over-right"
+    data-collapse="medium"
+    data-duration="400"
+    data-easing="ease"
+    data-easing2="ease"
+    role="banner"
+    class="navbar w-nav"
+  >
+    <div class="nav-inner-block">
+      <div class="container-main w-container">
+        <div class="nav-content-block">
+          <a
+            href={menu.brand}
+            aria-current={currentAria(menu.brand, path)}
+            class={currentClass('brand-logo-block w-nav-brand', menu.brand, path)}
+            ><img loading="lazy" src={site.logo.src} alt={site.logo.alt} class="brand-logo" /></a
+          >
+          <nav role="navigation" class="nav-menu-content w-nav-menu">
+            <div class="nav-link-block">
+              <div class="nav-menu-top">
+                <a
+                  href={menu.brand}
+                  aria-current={currentAria(menu.brand, path)}
+                  class={currentClass('brand-logo-block w-nav-brand', menu.brand, path)}
+                  ><img loading="lazy" src={site.logo.src} alt={site.logo.alt} class="brand-logo" /></a
+                >
+                <div class="menu-button-block">
+                  <div class="menu-close-button w-nav-button">
+                    <div class="menu-button-icon w-icon-nav-menu"></div>
+                  </div>
+                </div>
+              </div>
+              {
+                menu.main.map((link) => (
+                  <Fragment>
+                    <a
+                      href={link.href}
+                      aria-current={currentAria(link.href, path)}
+                      class={currentClass('nav-link', link.href, path)}
+                    >
+                      {link.label}
+                    </a>
+                    <div class="nav-liner" />
+                  </Fragment>
+                ))
+              }
+              <div data-hover="true" data-delay="0" class="nav-dropdown w-dropdown">
+                <div class="nav-link w-dropdown-toggle">
+                  <div>Pages</div>
+                  <div class="nav-link-icon w-icon-dropdown-toggle"></div>
+                </div>
+                <nav class="nav-dropdown-content w-dropdown-list">
+                  <div class="nav-dropdown-inner">
+                    <div class="nav-dropdown-left-block">
+                      <div class="nav-dropdown-top-block">
+                        <div class="nav-dropdown-link-block">
+                          {
+                            menu.dropdown.map((column) => (
+                              <div class="nav-dropdown-sub-column">
+                                <div class="nav-dropdown-title">{column.title}</div>
+                                {column.links.map((link) => (
+                                  <a
+                                    href={link.href}
+                                    aria-current={currentAria(link.href, path)}
+                                    class={currentClass(
+                                      'nav-dropdown-link w-dropdown-link',
+                                      link.href,
+                                      path,
+                                    )}
+                                  >
+                                    {link.label}
+                                  </a>
+                                ))}
+                              </div>
+                            ))
+                          }
+                        </div>
+                        <div class="nav-dropdown-bottom-block">
+                          <a href={site.author.url} target="_blank" class="nav-dropdown-bottom-link"
+                            >{site.author.label}</a
+                          >
+                          <div class="nav-dropdown-button-block">
+                            <a
+                              href={site.author.themes}
+                              target="_blank"
+                              class="dropdown-strock-button w-inline-block"
+                            >
+                              <div class="dropdown-button-text">All Theme</div>
+                            </a>
+                            <a
+                              href={site.author.customization}
+                              target="_blank"
+                              class="dropdown-strock-button w-inline-block"
+                            >
+                              <div class="dropdown-button-text">Customization</div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="nav-dropdown-info-block">
+                      <div class="nav-dropdown-info-top-block">
+                        <img
+                          src="/images/Nav-Dropdown-Logo.svg"
+                          loading="lazy"
+                          alt="Nav Dropdown Logo"
+                          class="nav-dropdown-logo"
+                        />
+                        <div class="nav-dropdown-info-text">Consulting &amp; coaching Astro theme</div>
+                      </div>
+                      <div class="nav-dropdown-info-bottom-block">
+                        <img
+                          src="/images/Nav-Dropdown-Image-1_1Nav-Dropdown-Image-1.webp"
+                          loading="lazy"
+                          alt="Website landing page with headline Unlock Your Next Level of Growth and a signup button."
+                          class="nav-dropdown-info-image"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+              <div class="nav-liner"></div>
+              <a
+                href={menu.contact.href}
+                aria-current={currentAria(menu.contact.href, path)}
+                class={currentClass('nav-link', menu.contact.href, path)}>{menu.contact.label}</a
+              >
+              <div class="general-button-block is-1">
+                <a
+                  href="#"
+                  data-wf--primary-button--variant="varient-1"
+                  data-wf-component-id="004977be-65b2-b2cc-9e77-75ec7af4b400"
+                  data-wf-variant-state="base"
+                  class="primary-button w-inline-block"
+                >
+                  <div class="button-dot-block"></div>
+                  <div class="button-text-block">
+                    <div class="button-text is-1">{menu.cta.label}</div>
+                  </div>
+                  <div class="button-icon-block">
+                    <div class="button-icon w-embed">
+                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.083 16L15.833 12L8.33301 12L12.083 16Z" fill="currentColor"></path>
+                        <path d="M11.333 2L11.333 12L12.833 12L12.833 2L11.333 2Z" fill="currentColor"></path>
+                        <path d="M2.33301 3.5L12.333 3.5L12.333 2L2.33301 2L2.33301 3.5Z" fill="currentColor"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </nav>
+          <div class="nav-button-block">
+            <div class="general-button-block is-2">
+              <a
+                href={menu.cta.href}
+                data-wf--primary-button--variant="varient-1"
+                data-wf-component-id="004977be-65b2-b2cc-9e77-75ec7af4b400"
+                data-wf-variant-state="base"
+                aria-current={currentAria(menu.cta.href, path)}
+                class={currentClass('primary-button w-inline-block', menu.cta.href, path)}
+              >
+                <div class="button-dot-block"></div>
+                <div class="button-text-block">
+                  <div class="button-text is-1">{menu.cta.label}</div>
+                </div>
+                <div class="button-icon-block">
+                  <div class="button-icon w-embed">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.083 16L15.833 12L8.33301 12L12.083 16Z" fill="currentColor"></path>
+                      <path d="M11.333 2L11.333 12L12.833 12L12.833 2L11.333 2Z" fill="currentColor"></path>
+                      <path d="M2.33301 3.5L12.333 3.5L12.333 2L2.33301 2L2.33301 3.5Z" fill="currentColor"></path>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="menu-button-block">
+              <div class="menu-open-button w-nav-button">
+                <div class="menu-button-icon w-icon-nav-menu"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

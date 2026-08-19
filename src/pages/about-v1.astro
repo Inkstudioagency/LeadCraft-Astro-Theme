@@ -1,0 +1,996 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { formatDate, getBlogs } from '../lib/content';
+import limits from '../config/collections.json';
+
+const homeBlogs = (await getBlogs()).slice(0, limits.about.blogs);
+
+---
+
+<BaseLayout
+  wfPageId="6a84225ef14a6cfa777048ab"
+  title="About V1 || Consulting Website Astro Theme"
+  description="Leadcraft is a premium Business Consulting Astro theme for consultants, agencies, and advisors to showcase services and generate leads."
+  hidden=".cta-inner-block, .cta-title.is-1, .cta-title.is-2, .cta-button-block, .link-button-icon, .blog-collection-block.is-1, .blog-collection-block.is-2, .blog-collection-block.is-3, [to-top-8], .timeline-ht-liner-block-v2, .timeline-pointer-block-v2.is-1, .timeline-pointer-block-v2.is-2, .timeline-pointer-block-v2.is-3, .timeline-pointer-block-v2.is-4, .team-cards-inner-block-v3, .team-scroll-liner-ht, .our-value-single-card-block-v3.is-1, .our-value-single-card-block-v3.is-2, .our-value-single-card-block-v3.is-3, .about-title-two, .about-title-overlay.is-1, .about-title-overlay.is-2, .about-title-overlay.is-3, .about-title-overlay.is-4, .button-text-block, .button-dot-block.dark, .footer-logo-content-block, [to-top-6], .heading-style-1-main, .heading-style-1-ht, .button-icon, [to-top-0], .button-dot-block, .heading-style-2, .faq-icon-line.is-2, [details-page-title], [to-top-4], [to-top-2], .link-dot, .link-text, [to-top-0s], [to-top-2s], [to-top-4s], [to-top-6s], [to-top-8s], .our-journey-card-block.is-5, .our-journey-card-block.is-4, .our-journey-card-block.is-3, .our-journey-card-block.is-2, .our-journey-card-block.is-1"
+>
+    <main class="main-wrapper">
+      <section class="section_breadcrumb">
+        <div class="hero-gap">
+          <div class="w-layout-blockcontainer container-main w-container">
+            <div class="breadcrumb-wrapper">
+              <div class="breadcrumb-content-block">
+                <div class="breadcrumb-title-block">
+                  <h1 class="heading-style-1 title-animation"><span class="heading-style-1-main">The Story Behind the</span> <span class="heading-style-1-ht">Strategy</span></h1>
+                </div>
+                <div to-top-2s="" class="breadcrumb-summary-block">
+                  <p class="text-size-regular text-color-white">Helping founders, executives, and ambitious teams break growth plateaus, build scalable systems, and create measurable business momentum.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="breadcrumb-bg-block"><img src="/images/breadcrumb-bg-dot.svg" loading="lazy" alt="breadcrumb-bg-dot" class="breadcrumb-bg-dot"><img src="/images/breadcrumb-bg-noise.svg" loading="lazy" alt="breadcrumb-bg-noise" class="breadcrumb-bg-noise"><img src="/images/breadcrumb-bg-image-1.webp" loading="lazy" sizes="(max-width: 1439px) 100vw, 1440px" srcset="/images/458036a4e6a730625df47bdebfba6199_breadcrumb-bg-image-1-p-500.webp 500w, /images/458036a4e6a730625df47bdebfba6199_breadcrumb-bg-image-1-p-800.webp 800w, /images/458036a4e6a730625df47bdebfba6199_breadcrumb-bg-image-1-p-1080.webp 1080w, /images/breadcrumb-bg-image-1.webp 1440w" alt="breadcrumb-bg-image" class="breadcrumb-bg-image"></div>
+      </section>
+      <section class="section_about padding-none">
+        <div class="section-gap">
+          <div class="w-layout-blockcontainer container-fluid w-container">
+            <div class="about-wrapper-two">
+              <div class="about-heading-block container-main">
+                <div to-top-0="" class="section-subtitle-block bottom-space">
+                  <div class="subtitle-dot"></div>
+                  <div class="subtitle-text">About</div>
+                </div>
+                <div to-top-0="" class="section-title-block max-width-50">
+                  <h2 class="about-title-two">                  Long before LeadCraft earned its reputation as a trusted coaching brand, it was founded on a single powerful belief great businesses are built by leaders who are committed to continuous growth and never stop evolving.</h2>
+                </div>
+              </div>
+              <div class="about-content-block-two container-main">
+                <div to-top-0="" class="about-video-block"><img src="/images/About-Video-Thumbnail_1About-Video-Thumbnail.webp" loading="lazy" alt="Group of six diverse people standing in a circle talking and smiling against a plain background." class="about-video-thumbnail"><img src="/images/About-Video-OVerlay.svg" loading="lazy" alt="About Video OVerlay" class="about-video-overlay">
+                  <a href="#" class="hero-card-lightbox w-inline-block w-lightbox">
+                    <div class="card-lightbox-icon w-embed"><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.3365 8.90706C13.9904 10.2222 12.3546 11.1515 9.08302 13.0101C5.92039 14.8068 4.33913 15.7053 3.06478 15.3441C2.53793 15.1948 2.0579 14.9113 1.67076 14.5207C0.734375 13.5759 0.734375 11.7435 0.734375 8.07862C0.734375 4.41375 0.734375 2.58131 1.67076 1.63656C2.0579 1.24598 2.53793 0.962419 3.06478 0.813125C4.33913 0.452013 5.92039 1.35038 9.08302 3.14714C12.3546 5.00576 13.9904 5.93508 14.3365 7.25019C14.4794 7.79308 14.4794 8.36417 14.3365 8.90706Z" stroke="currentColor" stroke-width="1.46885" stroke-linejoin="round"></path>
+                      </svg></div>
+                    <script type="application/json" class="w-json" is:inline>{
+  "items": [
+    {
+      "url": "https://www.youtube.com/watch?v=setu9Ir1miY&list=PLPmnoMVpkxfj-DzMkYNf7LM3ebjwoY6b2",
+      "originalUrl": "https://www.youtube.com/watch?v=setu9Ir1miY&list=PLPmnoMVpkxfj-DzMkYNf7LM3ebjwoY6b2",
+      "width": 940,
+      "height": 528,
+      "thumbnailUrl": "https://i.ytimg.com/vi/setu9Ir1miY/hqdefault.jpg",
+      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fsetu9Ir1miY%3Flist%3DPLPmnoMVpkxfj-DzMkYNf7LM3ebjwoY6b2&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dsetu9Ir1miY&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fsetu9Ir1miY%2Fhqdefault.jpg&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture\" allowfullscreen=\"true\"></iframe>",
+      "type": "video"
+    }
+  ],
+  "group": ""
+}</script>
+                  </a>
+                </div>
+                <div class="about-stat-block-two">
+                  <div to-top-2="" class="about-single-stat-block">
+                    <div class="about-stat-number _wf-counter">500+</div>
+                    <p class="about-stat-text">Businesses Transformed</p>
+                  </div>
+                  <div to-top-4="" class="about-single-stat-block">
+                    <div class="about-stat-number _wf-counter">13k+</div>
+                    <p class="about-stat-text">Industry Experience</p>
+                  </div>
+                  <div to-top-6="" class="about-single-stat-block">
+                    <div class="about-stat-number _wf-counter">36+</div>
+                    <p class="about-stat-text">Client Partnerships</p>
+                  </div>
+                </div>
+              </div>
+              <div data-wf--logo-marquee--variant="v2" class="logo-content-block w-variant-68f8e4a3-50d3-1764-6596-a8d9490d6fbf">
+                <div to-top-0="" class="logo-title-block">
+                  <div class="text-size-small text-align-center text-color-white">Brands we worked with</div>
+                </div>
+                <div to-top-2="" class="logo-content-inner">
+                  <div class="logo-row-block">
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-6.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-2.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-1.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-3.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-4.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-3.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-1.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-7.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-1.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-2.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-4.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-2.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-4.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-5.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-4.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-3.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-5.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-1.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-2.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-5.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-7.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-1.svg" alt="logo" class="logo"></div>
+                    <div class="logo-block"><img loading="lazy" src="/images/Company-logo-6.svg" alt="logo" class="logo"></div>
+                  </div>
+                  <div class="logo-overlay-block"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section_purpose">
+        <div class="section-gap">
+          <div class="w-layout-blockcontainer container-main w-container">
+            <div class="puropose-wrapper">
+              <div class="section-heading-block space-btwn">
+                <div class="section-heading-left-block">
+                  <div to-top-0="" class="section-subtitle-block bottom-space-lg">
+                    <div class="subtitle-dot"></div>
+                    <div class="subtitle-text">Mission &amp; Values</div>
+                  </div>
+                  <div class="section-title-block max-width-35">
+                    <h2 class="heading-style-2">The Principles That Guide Every Partnership</h2>
+                  </div>
+                </div>
+                <div class="section-heading-right-block">
+                  <div to-top-4="" class="section-summary-block max-width-24">
+                    <p class="text-size-regular">Every strategy we develop, every conversation we engage in, and every breakthrough we achieve is firmly rooted in these fundamental core values that guide our actions and decisions.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="puropose-content-block">
+                <div to-top-6="" class="puropose-image-block"><img src="/images/Purpose-Image-2.webp" loading="lazy" sizes="(max-width: 1279px) 100vw, 1280px" srcset="/images/Purpose-Image-2-p-500.webp 500w, /images/Purpose-Image-2-p-800.webp 800w, /images/Purpose-Image-2-p-1080.webp 1080w, /images/Purpose-Image-2.webp 1280w" alt="Man in navy shirt speaking to group of diverse professionals seated around a table." class="puropose-image"><img src="/images/Purpose-Image-Overlay.svg" loading="lazy" alt="Purpose Image Overlay" class="puropose-image-overlay"></div>
+                <div class="puropose-cards-block">
+                  <div to-top-0="" class="puropose-single-card-block">
+                    <div class="puropose-card-icon-block"><img src="/images/Purpose-Card-Icon.svg" loading="lazy" alt="Purpose Card Icon" class="puropose-card-icon"></div>
+                    <div class="puropose-card-text-block">
+                      <h3 class="heading-style-6">Integrity</h3>
+                      <p class="text-size-regular">We lead with honesty, transparency, and actions that build lasting trust.</p>
+                    </div>
+                  </div>
+                  <div to-top-2="" class="puropose-single-card-block">
+                    <div class="puropose-card-icon-block"><img src="/images/Purpose-Card-Icon-1.svg" loading="lazy" alt="Purpose Card Icon" class="puropose-card-icon"></div>
+                    <div class="puropose-card-text-block">
+                      <h3 class="heading-style-6">Growth</h3>
+                      <p class="text-size-regular">Continuous learning, adapting, and progress drive all we do. drive all we do.</p>
+                    </div>
+                  </div>
+                  <div to-top-4="" class="puropose-single-card-block">
+                    <div class="puropose-card-icon-block"><img src="/images/Purpose-Card-Icon-2.svg" loading="lazy" alt="Purpose Card Icon" class="puropose-card-icon"></div>
+                    <div class="puropose-card-text-block">
+                      <h3 class="heading-style-6">Accountability</h3>
+                      <p class="text-size-regular">Real change kicks in when you turn your promises into regular actions.</p>
+                    </div>
+                  </div>
+                  <div to-top-6="" class="puropose-single-card-block">
+                    <div class="puropose-card-icon-block"><img src="/images/Purpose-Card-Icon-3.svg" loading="lazy" alt="Purpose Card Icon" class="puropose-card-icon"></div>
+                    <div class="puropose-card-text-block">
+                      <h3 class="heading-style-6">Impact</h3>
+                      <p class="text-size-regular">Success is measured by meaningful, sustainable results, not just revenue.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section_credentials">
+        <div class="section-gap">
+          <div class="w-layout-blockcontainer container-main w-container">
+            <div class="credentials-wrapper">
+              <div class="section-heading-block">
+                <div to-top-0="" class="section-subtitle-block bottom-space-lg">
+                  <div class="subtitle-dot"></div>
+                  <div class="subtitle-text">Credentials</div>
+                </div>
+                <div class="section-title-block max-width-48">
+                  <h2 class="heading-style-2 text-align-center">Backed by Experience. Recognized by Industry Leaders</h2>
+                </div>
+              </div>
+              <div class="credentials-content-block">
+                <div class="credentials-cards-block">
+                  <div to-top-2="" class="credentials-card-block">
+                    <div class="credentials-card-icon-block"><img src="/images/credentials-card-icon.svg" loading="lazy" alt="credentials-card-icon" class="credentials-card-icon"></div>
+                    <div class="credentials-card-content-block">
+                      <div class="credentials-card-text-block">
+                        <h3 class="heading-style-6">Harvard Leadership Program</h3>
+                        <p class="text-size-regular">Advanced executive coaching certification focused on leadership transformation, strategic decision-making, and organizational performance.</p>
+                      </div>
+                      <div class="credentials-card-points-block">
+                        <div class="credentials-card-point-block">
+                          <div class="text-size-small text-color-gray-300">Leadership Development</div>
+                        </div>
+                        <div class="credentials-card-point-block">
+                          <div class="text-size-small text-color-gray-300">Executive Performance</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div to-top-4="" class="credentials-card-block">
+                    <div class="credentials-card-icon-block"><img src="/images/credentials-card-icon-1.svg" loading="lazy" alt="credentials-card-icon" class="credentials-card-icon"></div>
+                    <div class="credentials-card-content-block">
+                      <div class="credentials-card-text-block">
+                        <h3 class="heading-style-6">ICF Coaching Certification</h3>
+                        <p class="text-size-regular">Globally recognized coaching credential built on ethical coaching practices, effective communication, and measurable client transformation.</p>
+                      </div>
+                      <div class="credentials-card-points-block">
+                        <div class="credentials-card-point-block">
+                          <div class="text-size-small text-color-gray-300">Professional Credential</div>
+                        </div>
+                        <div class="credentials-card-point-block">
+                          <div class="text-size-small text-color-gray-300">International Coaching Federation</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div to-top-2="" class="credentials-card-block">
+                    <div class="credentials-card-icon-block"><img src="/images/credentials-card-icon-2.svg" loading="lazy" alt="credentials-card-icon" class="credentials-card-icon"></div>
+                    <div class="credentials-card-content-block">
+                      <div class="credentials-card-text-block">
+                        <h3 class="heading-style-6">Certified Executive Coach</h3>
+                        <p class="text-size-regular">Intensive leadership and business strategy program covering innovation, organizational growth, and high-impact decision frameworks.</p>
+                      </div>
+                      <div class="credentials-card-points-block">
+                        <div class="credentials-card-point-block">
+                          <div class="text-size-small text-color-gray-300">Executive Education</div>
+                        </div>
+                        <div class="credentials-card-point-block">
+                          <div class="text-size-small text-color-gray-300">Business Leadership</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div to-top-4="" class="credentials-card-block">
+                    <div class="credentials-card-icon-block"><img src="/images/credentials-card-icon-3.svg" loading="lazy" alt="credentials-card-icon" class="credentials-card-icon"></div>
+                    <div class="credentials-card-content-block">
+                      <div class="credentials-card-text-block">
+                        <h3 class="heading-style-6">MBA in Organizational Leadership</h3>
+                        <p class="text-size-regular">Academic foundation in leadership psychology, strategic management, team dynamics, and sustainable business growth excellence.</p>
+                      </div>
+                      <div class="credentials-card-points-block">
+                        <div class="credentials-card-point-block">
+                          <div class="text-size-small text-color-gray-300">Strategic Management</div>
+                        </div>
+                        <div class="credentials-card-point-block">
+                          <div class="text-size-small text-color-gray-300">Organizational Excellence</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section_team">
+        <div class="section-gap">
+          <div class="w-layout-blockcontainer container-main w-container">
+            <div class="team-wrapper">
+              <div class="section-heading-block space-btwn">
+                <div class="section-heading-left-block">
+                  <div to-top-0="" class="section-subtitle-block bottom-space-lg">
+                    <div class="subtitle-dot"></div>
+                    <div class="subtitle-text">Meet the Team</div>
+                  </div>
+                  <div class="section-title-block max-width-35">
+                    <h2 class="heading-style-2">The Experts Behind the Transformation</h2>
+                  </div>
+                </div>
+                <div class="section-heading-right-block">
+                  <div to-top-4="" class="section-summary-block max-width-30">
+                    <p class="text-size-regular">A dedicated team of strategists, coaches, and performance specialists committed to supporting and accelerating your personal and professional growth.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="team-content-block is-desktop">
+                <div to-top-4="" class="team-card-block">
+                  <div class="team-card-image-block"><img src="/images/Team-Image-Overlay.svg" loading="lazy" alt="Team Image Overlay" class="team-image-overlay"><img src="/images/Team-Image-3.webp" loading="lazy" alt="team-card-image" class="team-card-image"></div>
+                  <div class="team-card-content-block">
+                    <div class="team-card-top-content-block">
+                      <div class="team-name-block">
+                        <h3 class="heading-style-5">Michael Carter</h3>
+                      </div>
+                      <div class="team-designation-block">
+                        <p>Founder &amp; Lead Coach</p>
+                      </div>
+                    </div>
+                    <div class="team-card-bottom-content-block">
+                      <a aria-label="team-social-link-block" href="#" class="team-social-link-block w-inline-block">
+                        <div class="team-social-icon w-embed"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 21L10.5484 13.4516M13.4516 10.5484L21 21H16L10.5484 13.4516L3 3H8L13.4516 10.5484ZM21 3L13.4516 10.5484" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg></div>
+                      </a>
+                      <a aria-label="team-social-link-block" href="#" class="team-social-link-block w-inline-block">
+                        <div class="team-social-icon w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 12C3 7.75736 3 5.63604 4.31802 4.31802C5.63604 3 7.75736 3 12 3C16.2426 3 18.364 3 19.682 4.31802C21 5.63604 21 7.75736 21 12C21 16.2426 21 18.364 19.682 19.682C18.364 21 16.2426 21 12 21C7.75736 21 5.63604 21 4.31802 19.682C3 18.364 3 16.2426 3 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M17.3748 6.75024H17.2498M17.4998 6.75024C17.4998 6.88832 17.3878 7.00024 17.2498 7.00024C17.1117 7.00024 16.9998 6.88832 16.9998 6.75024C16.9998 6.61217 17.1117 6.50024 17.2498 6.50024C17.3878 6.50024 17.4998 6.61217 17.4998 6.75024Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg></div>
+                      </a>
+                      <a aria-label="team-social-link-block" href="#" class="team-social-link-block w-inline-block">
+                        <div class="team-social-icon w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 10V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M11 13V17M11 13C11 11.3431 12.3431 10 14 10C15.6569 10 17 11.3431 17 13V17M11 13V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M7.125 6.75H7M7.25 6.75C7.25 6.88807 7.13807 7 7 7C6.86193 7 6.75 6.88807 6.75 6.75C6.75 6.61193 6.86193 6.5 7 6.5C7.13807 6.5 7.25 6.61193 7.25 6.75Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M3 12C3 7.75736 3 5.63604 4.31802 4.31802C5.63604 3 7.75736 3 12 3C16.2426 3 18.364 3 19.682 4.31802C21 5.63604 21 7.75736 21 12C21 16.2426 21 18.364 19.682 19.682C18.364 21 16.2426 21 12 21C7.75736 21 5.63604 21 4.31802 19.682C3 18.364 3 16.2426 3 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div to-top-6="" class="team-card-block">
+                  <div class="team-card-image-block"><img src="/images/Team-Image-Overlay.svg" loading="lazy" alt="Team Image Overlay" class="team-image-overlay"><img src="/images/Team-Image-2.webp" loading="lazy" alt="team-card-image" class="team-card-image"></div>
+                  <div class="team-card-content-block">
+                    <div class="team-card-top-content-block">
+                      <div class="team-name-block">
+                        <h3 class="heading-style-5">Robert Fox</h3>
+                      </div>
+                      <div class="team-designation-block">
+                        <p>Executive Leadership Coach</p>
+                      </div>
+                    </div>
+                    <div class="team-card-bottom-content-block">
+                      <a aria-label="team-social-link-block" href="#" class="team-social-link-block w-inline-block">
+                        <div class="team-social-icon w-embed"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 21L10.5484 13.4516M13.4516 10.5484L21 21H16L10.5484 13.4516L3 3H8L13.4516 10.5484ZM21 3L13.4516 10.5484" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg></div>
+                      </a>
+                      <a aria-label="team-social-link-block" href="#" class="team-social-link-block w-inline-block">
+                        <div class="team-social-icon w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 12C3 7.75736 3 5.63604 4.31802 4.31802C5.63604 3 7.75736 3 12 3C16.2426 3 18.364 3 19.682 4.31802C21 5.63604 21 7.75736 21 12C21 16.2426 21 18.364 19.682 19.682C18.364 21 16.2426 21 12 21C7.75736 21 5.63604 21 4.31802 19.682C3 18.364 3 16.2426 3 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M17.3748 6.75024H17.2498M17.4998 6.75024C17.4998 6.88832 17.3878 7.00024 17.2498 7.00024C17.1117 7.00024 16.9998 6.88832 16.9998 6.75024C16.9998 6.61217 17.1117 6.50024 17.2498 6.50024C17.3878 6.50024 17.4998 6.61217 17.4998 6.75024Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg></div>
+                      </a>
+                      <a aria-label="team-social-link-block" href="#" class="team-social-link-block w-inline-block">
+                        <div class="team-social-icon w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 10V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M11 13V17M11 13C11 11.3431 12.3431 10 14 10C15.6569 10 17 11.3431 17 13V17M11 13V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M7.125 6.75H7M7.25 6.75C7.25 6.88807 7.13807 7 7 7C6.86193 7 6.75 6.88807 6.75 6.75C6.75 6.61193 6.86193 6.5 7 6.5C7.13807 6.5 7.25 6.61193 7.25 6.75Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M3 12C3 7.75736 3 5.63604 4.31802 4.31802C5.63604 3 7.75736 3 12 3C16.2426 3 18.364 3 19.682 4.31802C21 5.63604 21 7.75736 21 12C21 16.2426 21 18.364 19.682 19.682C18.364 21 16.2426 21 12 21C7.75736 21 5.63604 21 4.31802 19.682C3 18.364 3 16.2426 3 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div to-top-8="" class="team-card-block">
+                  <div class="team-card-image-block"><img src="/images/Team-Image-Overlay.svg" loading="lazy" alt="Team Image Overlay" class="team-image-overlay"><img src="/images/Team-Image-3_1.webp" loading="lazy" alt="team-card-image" class="team-card-image"></div>
+                  <div class="team-card-content-block">
+                    <div class="team-card-top-content-block">
+                      <div class="team-name-block">
+                        <h3 class="heading-style-5">Brooklyn Simmons</h3>
+                      </div>
+                      <div class="team-designation-block">
+                        <p>Growth Strategy Consultant</p>
+                      </div>
+                    </div>
+                    <div class="team-card-bottom-content-block">
+                      <a aria-label="team-social-link-block" href="#" class="team-social-link-block w-inline-block">
+                        <div class="team-social-icon w-embed"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 21L10.5484 13.4516M13.4516 10.5484L21 21H16L10.5484 13.4516L3 3H8L13.4516 10.5484ZM21 3L13.4516 10.5484" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg></div>
+                      </a>
+                      <a aria-label="team-social-link-block" href="#" class="team-social-link-block w-inline-block">
+                        <div class="team-social-icon w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 12C3 7.75736 3 5.63604 4.31802 4.31802C5.63604 3 7.75736 3 12 3C16.2426 3 18.364 3 19.682 4.31802C21 5.63604 21 7.75736 21 12C21 16.2426 21 18.364 19.682 19.682C18.364 21 16.2426 21 12 21C7.75736 21 5.63604 21 4.31802 19.682C3 18.364 3 16.2426 3 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M17.3748 6.75024H17.2498M17.4998 6.75024C17.4998 6.88832 17.3878 7.00024 17.2498 7.00024C17.1117 7.00024 16.9998 6.88832 16.9998 6.75024C16.9998 6.61217 17.1117 6.50024 17.2498 6.50024C17.3878 6.50024 17.4998 6.61217 17.4998 6.75024Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg></div>
+                      </a>
+                      <a aria-label="team-social-link-block" href="#" class="team-social-link-block w-inline-block">
+                        <div class="team-social-icon w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 10V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M11 13V17M11 13C11 11.3431 12.3431 10 14 10C15.6569 10 17 11.3431 17 13V17M11 13V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M7.125 6.75H7M7.25 6.75C7.25 6.88807 7.13807 7 7 7C6.86193 7 6.75 6.88807 6.75 6.75C6.75 6.61193 6.86193 6.5 7 6.5C7.13807 6.5 7.25 6.61193 7.25 6.75Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M3 12C3 7.75736 3 5.63604 4.31802 4.31802C5.63604 3 7.75736 3 12 3C16.2426 3 18.364 3 19.682 4.31802C21 5.63604 21 7.75736 21 12C21 16.2426 21 18.364 19.682 19.682C18.364 21 16.2426 21 12 21C7.75736 21 5.63604 21 4.31802 19.682C3 18.364 3 16.2426 3 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div to-top-0="" class="team-card-block">
+                  <div class="team-card-image-block"><img src="/images/Team-Image-Overlay.svg" loading="lazy" alt="Team Image Overlay" class="team-image-overlay"><img src="/images/Team-Image-4.webp" loading="lazy" alt="team-card-image" class="team-card-image"></div>
+                  <div class="team-card-content-block">
+                    <div class="team-card-top-content-block">
+                      <div class="team-name-block">
+                        <h3 class="heading-style-5">Esther Howard</h3>
+                      </div>
+                      <div class="team-designation-block">
+                        <p>Team Leader</p>
+                      </div>
+                    </div>
+                    <div class="team-card-bottom-content-block">
+                      <a aria-label="team-social-link-block" href="#" class="team-social-link-block w-inline-block">
+                        <div class="team-social-icon w-embed"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 21L10.5484 13.4516M13.4516 10.5484L21 21H16L10.5484 13.4516L3 3H8L13.4516 10.5484ZM21 3L13.4516 10.5484" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg></div>
+                      </a>
+                      <a aria-label="team-social-link-block" href="#" class="team-social-link-block w-inline-block">
+                        <div class="team-social-icon w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 12C3 7.75736 3 5.63604 4.31802 4.31802C5.63604 3 7.75736 3 12 3C16.2426 3 18.364 3 19.682 4.31802C21 5.63604 21 7.75736 21 12C21 16.2426 21 18.364 19.682 19.682C18.364 21 16.2426 21 12 21C7.75736 21 5.63604 21 4.31802 19.682C3 18.364 3 16.2426 3 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M17.3748 6.75024H17.2498M17.4998 6.75024C17.4998 6.88832 17.3878 7.00024 17.2498 7.00024C17.1117 7.00024 16.9998 6.88832 16.9998 6.75024C16.9998 6.61217 17.1117 6.50024 17.2498 6.50024C17.3878 6.50024 17.4998 6.61217 17.4998 6.75024Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg></div>
+                      </a>
+                      <a aria-label="team-social-link-block" href="#" class="team-social-link-block w-inline-block">
+                        <div class="team-social-icon w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 10V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M11 13V17M11 13C11 11.3431 12.3431 10 14 10C15.6569 10 17 11.3431 17 13V17M11 13V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M7.125 6.75H7M7.25 6.75C7.25 6.88807 7.13807 7 7 7C6.86193 7 6.75 6.88807 6.75 6.75C6.75 6.61193 6.86193 6.5 7 6.5C7.13807 6.5 7.25 6.61193 7.25 6.75Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M3 12C3 7.75736 3 5.63604 4.31802 4.31802C5.63604 3 7.75736 3 12 3C16.2426 3 18.364 3 19.682 4.31802C21 5.63604 21 7.75736 21 12C21 16.2426 21 18.364 19.682 19.682C18.364 21 16.2426 21 12 21C7.75736 21 5.63604 21 4.31802 19.682C3 18.364 3 16.2426 3 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div to-top-2="" class="team-card-block">
+                  <div class="team-card-image-block"><img src="/images/Team-Image-Overlay.svg" loading="lazy" alt="Team Image Overlay" class="team-image-overlay"><img src="/images/Team-Image-5.webp" loading="lazy" alt="team-card-image" class="team-card-image"></div>
+                  <div class="team-card-content-block">
+                    <div class="team-card-top-content-block">
+                      <div class="team-name-block">
+                        <h3 class="heading-style-5">Jacob Jones</h3>
+                      </div>
+                      <div class="team-designation-block">
+                        <p>Senior Leadership Coach</p>
+                      </div>
+                    </div>
+                    <div class="team-card-bottom-content-block">
+                      <a aria-label="team-social-link-block" href="#" class="team-social-link-block w-inline-block">
+                        <div class="team-social-icon w-embed"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 21L10.5484 13.4516M13.4516 10.5484L21 21H16L10.5484 13.4516L3 3H8L13.4516 10.5484ZM21 3L13.4516 10.5484" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg></div>
+                      </a>
+                      <a aria-label="team-social-link-block" href="#" class="team-social-link-block w-inline-block">
+                        <div class="team-social-icon w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 12C3 7.75736 3 5.63604 4.31802 4.31802C5.63604 3 7.75736 3 12 3C16.2426 3 18.364 3 19.682 4.31802C21 5.63604 21 7.75736 21 12C21 16.2426 21 18.364 19.682 19.682C18.364 21 16.2426 21 12 21C7.75736 21 5.63604 21 4.31802 19.682C3 18.364 3 16.2426 3 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M17.3748 6.75024H17.2498M17.4998 6.75024C17.4998 6.88832 17.3878 7.00024 17.2498 7.00024C17.1117 7.00024 16.9998 6.88832 16.9998 6.75024C16.9998 6.61217 17.1117 6.50024 17.2498 6.50024C17.3878 6.50024 17.4998 6.61217 17.4998 6.75024Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg></div>
+                      </a>
+                      <a aria-label="team-social-link-block" href="#" class="team-social-link-block w-inline-block">
+                        <div class="team-social-icon w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 10V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M11 13V17M11 13C11 11.3431 12.3431 10 14 10C15.6569 10 17 11.3431 17 13V17M11 13V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M7.125 6.75H7M7.25 6.75C7.25 6.88807 7.13807 7 7 7C6.86193 7 6.75 6.88807 6.75 6.75C6.75 6.61193 6.86193 6.5 7 6.5C7.13807 6.5 7.25 6.61193 7.25 6.75Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M3 12C3 7.75736 3 5.63604 4.31802 4.31802C5.63604 3 7.75736 3 12 3C16.2426 3 18.364 3 19.682 4.31802C21 5.63604 21 7.75736 21 12C21 16.2426 21 18.364 19.682 19.682C18.364 21 16.2426 21 12 21C7.75736 21 5.63604 21 4.31802 19.682C3 18.364 3 16.2426 3 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div to-top-4="" class="team-card-block">
+                  <div class="team-card-image-block"><img src="/images/Team-Image-Overlay.svg" loading="lazy" alt="Team Image Overlay" class="team-image-overlay"><img src="/images/Team-Image-6.webp" loading="lazy" alt="team-card-image" class="team-card-image"></div>
+                  <div class="team-card-content-block">
+                    <div class="team-card-top-content-block">
+                      <div class="team-name-block">
+                        <h3 class="heading-style-5">Dianne Russell</h3>
+                      </div>
+                      <div class="team-designation-block">
+                        <p>Head Coach</p>
+                      </div>
+                    </div>
+                    <div class="team-card-bottom-content-block">
+                      <a aria-label="team-social-link-block" href="#" class="team-social-link-block w-inline-block">
+                        <div class="team-social-icon w-embed"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 21L10.5484 13.4516M13.4516 10.5484L21 21H16L10.5484 13.4516L3 3H8L13.4516 10.5484ZM21 3L13.4516 10.5484" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg></div>
+                      </a>
+                      <a aria-label="team-social-link-block" href="#" class="team-social-link-block w-inline-block">
+                        <div class="team-social-icon w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 12C3 7.75736 3 5.63604 4.31802 4.31802C5.63604 3 7.75736 3 12 3C16.2426 3 18.364 3 19.682 4.31802C21 5.63604 21 7.75736 21 12C21 16.2426 21 18.364 19.682 19.682C18.364 21 16.2426 21 12 21C7.75736 21 5.63604 21 4.31802 19.682C3 18.364 3 16.2426 3 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M17.3748 6.75024H17.2498M17.4998 6.75024C17.4998 6.88832 17.3878 7.00024 17.2498 7.00024C17.1117 7.00024 16.9998 6.88832 16.9998 6.75024C16.9998 6.61217 17.1117 6.50024 17.2498 6.50024C17.3878 6.50024 17.4998 6.61217 17.4998 6.75024Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg></div>
+                      </a>
+                      <a aria-label="team-social-link-block" href="#" class="team-social-link-block w-inline-block">
+                        <div class="team-social-icon w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 10V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M11 13V17M11 13C11 11.3431 12.3431 10 14 10C15.6569 10 17 11.3431 17 13V17M11 13V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M7.125 6.75H7M7.25 6.75C7.25 6.88807 7.13807 7 7 7C6.86193 7 6.75 6.88807 6.75 6.75C6.75 6.61193 6.86193 6.5 7 6.5C7.13807 6.5 7.25 6.61193 7.25 6.75Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M3 12C3 7.75736 3 5.63604 4.31802 4.31802C5.63604 3 7.75736 3 12 3C16.2426 3 18.364 3 19.682 4.31802C21 5.63604 21 7.75736 21 12C21 16.2426 21 18.364 19.682 19.682C18.364 21 16.2426 21 12 21C7.75736 21 5.63604 21 4.31802 19.682C3 18.364 3 16.2426 3 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="team-content-block is-mobile">
+                <div data-delay="4000" data-animation="slide" class="mobile-slider-block w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+                  <div class="mobile-slider-mask w-slider-mask">
+                    <div class="mobile-slide-block w-slide">
+                      <div to-top-4="" class="team-card-block">
+                        <div class="team-card-image-block"><img src="/images/Team-Image-Overlay.svg" loading="lazy" alt="Team Image Overlay" class="team-image-overlay"><img src="/images/Team-Image-3.webp" loading="lazy" alt="team-card-image" class="team-card-image"></div>
+                        <div class="team-card-content-block">
+                          <div class="team-card-top-content-block">
+                            <div class="team-name-block">
+                              <h3 class="heading-style-5">Michael Carter</h3>
+                            </div>
+                            <div class="team-designation-block">
+                              <p>Founder &amp; Lead Coach</p>
+                            </div>
+                          </div>
+                          <div class="team-card-bottom-content-block">
+                            <a aria-label="team-social-link-block" href="#" class="team-social-link-block w-inline-block">
+                              <div class="team-social-icon w-embed"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M3 21L10.5484 13.4516M13.4516 10.5484L21 21H16L10.5484 13.4516L3 3H8L13.4516 10.5484ZM21 3L13.4516 10.5484" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></div>
+                            </a>
+                            <a aria-label="team-social-link-block" href="#" class="team-social-link-block w-inline-block">
+                              <div class="team-social-icon w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M3 12C3 7.75736 3 5.63604 4.31802 4.31802C5.63604 3 7.75736 3 12 3C16.2426 3 18.364 3 19.682 4.31802C21 5.63604 21 7.75736 21 12C21 16.2426 21 18.364 19.682 19.682C18.364 21 16.2426 21 12 21C7.75736 21 5.63604 21 4.31802 19.682C3 18.364 3 16.2426 3 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M17.3748 6.75024H17.2498M17.4998 6.75024C17.4998 6.88832 17.3878 7.00024 17.2498 7.00024C17.1117 7.00024 16.9998 6.88832 16.9998 6.75024C16.9998 6.61217 17.1117 6.50024 17.2498 6.50024C17.3878 6.50024 17.4998 6.61217 17.4998 6.75024Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></div>
+                            </a>
+                            <a aria-label="team-social-link-block" href="#" class="team-social-link-block w-inline-block">
+                              <div class="team-social-icon w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M7 10V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M11 13V17M11 13C11 11.3431 12.3431 10 14 10C15.6569 10 17 11.3431 17 13V17M11 13V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M7.125 6.75H7M7.25 6.75C7.25 6.88807 7.13807 7 7 7C6.86193 7 6.75 6.88807 6.75 6.75C6.75 6.61193 6.86193 6.5 7 6.5C7.13807 6.5 7.25 6.61193 7.25 6.75Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M3 12C3 7.75736 3 5.63604 4.31802 4.31802C5.63604 3 7.75736 3 12 3C16.2426 3 18.364 3 19.682 4.31802C21 5.63604 21 7.75736 21 12C21 16.2426 21 18.364 19.682 19.682C18.364 21 16.2426 21 12 21C7.75736 21 5.63604 21 4.31802 19.682C3 18.364 3 16.2426 3 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mobile-slide-block w-slide">
+                      <div to-top-4="" class="team-card-block">
+                        <div class="team-card-image-block"><img src="/images/Team-Image-Overlay.svg" loading="lazy" alt="Team Image Overlay" class="team-image-overlay"><img src="/images/Team-Image-2.webp" loading="lazy" alt="team-card-image" class="team-card-image"></div>
+                        <div class="team-card-content-block">
+                          <div class="team-card-top-content-block">
+                            <div class="team-name-block">
+                              <h3 class="heading-style-5">Robert Fox</h3>
+                            </div>
+                            <div class="team-designation-block">
+                              <p>Executive Leadership Coach</p>
+                            </div>
+                          </div>
+                          <div class="team-card-bottom-content-block">
+                            <a aria-label="team-social-link-block" href="#" class="team-social-link-block w-inline-block">
+                              <div class="team-social-icon w-embed"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M3 21L10.5484 13.4516M13.4516 10.5484L21 21H16L10.5484 13.4516L3 3H8L13.4516 10.5484ZM21 3L13.4516 10.5484" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></div>
+                            </a>
+                            <a aria-label="team-social-link-block" href="#" class="team-social-link-block w-inline-block">
+                              <div class="team-social-icon w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M3 12C3 7.75736 3 5.63604 4.31802 4.31802C5.63604 3 7.75736 3 12 3C16.2426 3 18.364 3 19.682 4.31802C21 5.63604 21 7.75736 21 12C21 16.2426 21 18.364 19.682 19.682C18.364 21 16.2426 21 12 21C7.75736 21 5.63604 21 4.31802 19.682C3 18.364 3 16.2426 3 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M17.3748 6.75024H17.2498M17.4998 6.75024C17.4998 6.88832 17.3878 7.00024 17.2498 7.00024C17.1117 7.00024 16.9998 6.88832 16.9998 6.75024C16.9998 6.61217 17.1117 6.50024 17.2498 6.50024C17.3878 6.50024 17.4998 6.61217 17.4998 6.75024Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></div>
+                            </a>
+                            <a aria-label="team-social-link-block" href="#" class="team-social-link-block w-inline-block">
+                              <div class="team-social-icon w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M7 10V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M11 13V17M11 13C11 11.3431 12.3431 10 14 10C15.6569 10 17 11.3431 17 13V17M11 13V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M7.125 6.75H7M7.25 6.75C7.25 6.88807 7.13807 7 7 7C6.86193 7 6.75 6.88807 6.75 6.75C6.75 6.61193 6.86193 6.5 7 6.5C7.13807 6.5 7.25 6.61193 7.25 6.75Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M3 12C3 7.75736 3 5.63604 4.31802 4.31802C5.63604 3 7.75736 3 12 3C16.2426 3 18.364 3 19.682 4.31802C21 5.63604 21 7.75736 21 12C21 16.2426 21 18.364 19.682 19.682C18.364 21 16.2426 21 12 21C7.75736 21 5.63604 21 4.31802 19.682C3 18.364 3 16.2426 3 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mobile-slide-block w-slide">
+                      <div to-top-4="" class="team-card-block">
+                        <div class="team-card-image-block"><img src="/images/Team-Image-Overlay.svg" loading="lazy" alt="Team Image Overlay" class="team-image-overlay"><img src="/images/Team-Image-3_1.webp" loading="lazy" alt="team-card-image" class="team-card-image"></div>
+                        <div class="team-card-content-block">
+                          <div class="team-card-top-content-block">
+                            <div class="team-name-block">
+                              <h3 class="heading-style-5">Brooklyn Simmons</h3>
+                            </div>
+                            <div class="team-designation-block">
+                              <p>Growth Strategy Consultant</p>
+                            </div>
+                          </div>
+                          <div class="team-card-bottom-content-block">
+                            <a aria-label="team-social-link-block" href="#" class="team-social-link-block w-inline-block">
+                              <div class="team-social-icon w-embed"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M3 21L10.5484 13.4516M13.4516 10.5484L21 21H16L10.5484 13.4516L3 3H8L13.4516 10.5484ZM21 3L13.4516 10.5484" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></div>
+                            </a>
+                            <a aria-label="team-social-link-block" href="#" class="team-social-link-block w-inline-block">
+                              <div class="team-social-icon w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M3 12C3 7.75736 3 5.63604 4.31802 4.31802C5.63604 3 7.75736 3 12 3C16.2426 3 18.364 3 19.682 4.31802C21 5.63604 21 7.75736 21 12C21 16.2426 21 18.364 19.682 19.682C18.364 21 16.2426 21 12 21C7.75736 21 5.63604 21 4.31802 19.682C3 18.364 3 16.2426 3 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M17.3748 6.75024H17.2498M17.4998 6.75024C17.4998 6.88832 17.3878 7.00024 17.2498 7.00024C17.1117 7.00024 16.9998 6.88832 16.9998 6.75024C16.9998 6.61217 17.1117 6.50024 17.2498 6.50024C17.3878 6.50024 17.4998 6.61217 17.4998 6.75024Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></div>
+                            </a>
+                            <a aria-label="team-social-link-block" href="#" class="team-social-link-block w-inline-block">
+                              <div class="team-social-icon w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M7 10V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M11 13V17M11 13C11 11.3431 12.3431 10 14 10C15.6569 10 17 11.3431 17 13V17M11 13V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M7.125 6.75H7M7.25 6.75C7.25 6.88807 7.13807 7 7 7C6.86193 7 6.75 6.88807 6.75 6.75C6.75 6.61193 6.86193 6.5 7 6.5C7.13807 6.5 7.25 6.61193 7.25 6.75Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M3 12C3 7.75736 3 5.63604 4.31802 4.31802C5.63604 3 7.75736 3 12 3C16.2426 3 18.364 3 19.682 4.31802C21 5.63604 21 7.75736 21 12C21 16.2426 21 18.364 19.682 19.682C18.364 21 16.2426 21 12 21C7.75736 21 5.63604 21 4.31802 19.682C3 18.364 3 16.2426 3 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mobile-slide-block w-slide">
+                      <div to-top-4="" class="team-card-block">
+                        <div class="team-card-image-block"><img src="/images/Team-Image-Overlay.svg" loading="lazy" alt="Team Image Overlay" class="team-image-overlay"><img src="/images/Team-Image-4.webp" loading="lazy" alt="team-card-image" class="team-card-image"></div>
+                        <div class="team-card-content-block">
+                          <div class="team-card-top-content-block">
+                            <div class="team-name-block">
+                              <h3 class="heading-style-5">Esther Howard</h3>
+                            </div>
+                            <div class="team-designation-block">
+                              <p>Team Leader</p>
+                            </div>
+                          </div>
+                          <div class="team-card-bottom-content-block">
+                            <a aria-label="team-social-link-block" href="#" class="team-social-link-block w-inline-block">
+                              <div class="team-social-icon w-embed"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M3 21L10.5484 13.4516M13.4516 10.5484L21 21H16L10.5484 13.4516L3 3H8L13.4516 10.5484ZM21 3L13.4516 10.5484" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></div>
+                            </a>
+                            <a aria-label="team-social-link-block" href="#" class="team-social-link-block w-inline-block">
+                              <div class="team-social-icon w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M3 12C3 7.75736 3 5.63604 4.31802 4.31802C5.63604 3 7.75736 3 12 3C16.2426 3 18.364 3 19.682 4.31802C21 5.63604 21 7.75736 21 12C21 16.2426 21 18.364 19.682 19.682C18.364 21 16.2426 21 12 21C7.75736 21 5.63604 21 4.31802 19.682C3 18.364 3 16.2426 3 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M17.3748 6.75024H17.2498M17.4998 6.75024C17.4998 6.88832 17.3878 7.00024 17.2498 7.00024C17.1117 7.00024 16.9998 6.88832 16.9998 6.75024C16.9998 6.61217 17.1117 6.50024 17.2498 6.50024C17.3878 6.50024 17.4998 6.61217 17.4998 6.75024Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></div>
+                            </a>
+                            <a aria-label="team-social-link-block" href="#" class="team-social-link-block w-inline-block">
+                              <div class="team-social-icon w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M7 10V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M11 13V17M11 13C11 11.3431 12.3431 10 14 10C15.6569 10 17 11.3431 17 13V17M11 13V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M7.125 6.75H7M7.25 6.75C7.25 6.88807 7.13807 7 7 7C6.86193 7 6.75 6.88807 6.75 6.75C6.75 6.61193 6.86193 6.5 7 6.5C7.13807 6.5 7.25 6.61193 7.25 6.75Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M3 12C3 7.75736 3 5.63604 4.31802 4.31802C5.63604 3 7.75736 3 12 3C16.2426 3 18.364 3 19.682 4.31802C21 5.63604 21 7.75736 21 12C21 16.2426 21 18.364 19.682 19.682C18.364 21 16.2426 21 12 21C7.75736 21 5.63604 21 4.31802 19.682C3 18.364 3 16.2426 3 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mobile-slide-block w-slide">
+                      <div to-top-4="" class="team-card-block">
+                        <div class="team-card-image-block"><img src="/images/Team-Image-Overlay.svg" loading="lazy" alt="Team Image Overlay" class="team-image-overlay"><img src="/images/Team-Image-5.webp" loading="lazy" alt="team-card-image" class="team-card-image"></div>
+                        <div class="team-card-content-block">
+                          <div class="team-card-top-content-block">
+                            <div class="team-name-block">
+                              <h3 class="heading-style-5">Jacob Jones</h3>
+                            </div>
+                            <div class="team-designation-block">
+                              <p>Senior Leadership Coach</p>
+                            </div>
+                          </div>
+                          <div class="team-card-bottom-content-block">
+                            <a aria-label="team-social-link-block" href="#" class="team-social-link-block w-inline-block">
+                              <div class="team-social-icon w-embed"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M3 21L10.5484 13.4516M13.4516 10.5484L21 21H16L10.5484 13.4516L3 3H8L13.4516 10.5484ZM21 3L13.4516 10.5484" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></div>
+                            </a>
+                            <a aria-label="team-social-link-block" href="#" class="team-social-link-block w-inline-block">
+                              <div class="team-social-icon w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M3 12C3 7.75736 3 5.63604 4.31802 4.31802C5.63604 3 7.75736 3 12 3C16.2426 3 18.364 3 19.682 4.31802C21 5.63604 21 7.75736 21 12C21 16.2426 21 18.364 19.682 19.682C18.364 21 16.2426 21 12 21C7.75736 21 5.63604 21 4.31802 19.682C3 18.364 3 16.2426 3 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M17.3748 6.75024H17.2498M17.4998 6.75024C17.4998 6.88832 17.3878 7.00024 17.2498 7.00024C17.1117 7.00024 16.9998 6.88832 16.9998 6.75024C16.9998 6.61217 17.1117 6.50024 17.2498 6.50024C17.3878 6.50024 17.4998 6.61217 17.4998 6.75024Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></div>
+                            </a>
+                            <a aria-label="team-social-link-block" href="#" class="team-social-link-block w-inline-block">
+                              <div class="team-social-icon w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M7 10V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M11 13V17M11 13C11 11.3431 12.3431 10 14 10C15.6569 10 17 11.3431 17 13V17M11 13V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M7.125 6.75H7M7.25 6.75C7.25 6.88807 7.13807 7 7 7C6.86193 7 6.75 6.88807 6.75 6.75C6.75 6.61193 6.86193 6.5 7 6.5C7.13807 6.5 7.25 6.61193 7.25 6.75Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M3 12C3 7.75736 3 5.63604 4.31802 4.31802C5.63604 3 7.75736 3 12 3C16.2426 3 18.364 3 19.682 4.31802C21 5.63604 21 7.75736 21 12C21 16.2426 21 18.364 19.682 19.682C18.364 21 16.2426 21 12 21C7.75736 21 5.63604 21 4.31802 19.682C3 18.364 3 16.2426 3 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mobile-slide-block w-slide">
+                      <div to-top-4="" class="team-card-block">
+                        <div class="team-card-image-block"><img src="/images/Team-Image-Overlay.svg" loading="lazy" alt="Team Image Overlay" class="team-image-overlay"><img src="/images/Team-Image-6.webp" loading="lazy" alt="team-card-image" class="team-card-image"></div>
+                        <div class="team-card-content-block">
+                          <div class="team-card-top-content-block">
+                            <div class="team-name-block">
+                              <h3 class="heading-style-5">Dianne Russell</h3>
+                            </div>
+                            <div class="team-designation-block">
+                              <p>Head Coach</p>
+                            </div>
+                          </div>
+                          <div class="team-card-bottom-content-block">
+                            <a aria-label="team-social-link-block" href="#" class="team-social-link-block w-inline-block">
+                              <div class="team-social-icon w-embed"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M3 21L10.5484 13.4516M13.4516 10.5484L21 21H16L10.5484 13.4516L3 3H8L13.4516 10.5484ZM21 3L13.4516 10.5484" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></div>
+                            </a>
+                            <a aria-label="team-social-link-block" href="#" class="team-social-link-block w-inline-block">
+                              <div class="team-social-icon w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M3 12C3 7.75736 3 5.63604 4.31802 4.31802C5.63604 3 7.75736 3 12 3C16.2426 3 18.364 3 19.682 4.31802C21 5.63604 21 7.75736 21 12C21 16.2426 21 18.364 19.682 19.682C18.364 21 16.2426 21 12 21C7.75736 21 5.63604 21 4.31802 19.682C3 18.364 3 16.2426 3 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M17.3748 6.75024H17.2498M17.4998 6.75024C17.4998 6.88832 17.3878 7.00024 17.2498 7.00024C17.1117 7.00024 16.9998 6.88832 16.9998 6.75024C16.9998 6.61217 17.1117 6.50024 17.2498 6.50024C17.3878 6.50024 17.4998 6.61217 17.4998 6.75024Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></div>
+                            </a>
+                            <a aria-label="team-social-link-block" href="#" class="team-social-link-block w-inline-block">
+                              <div class="team-social-icon w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M7 10V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M11 13V17M11 13C11 11.3431 12.3431 10 14 10C15.6569 10 17 11.3431 17 13V17M11 13V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M7.125 6.75H7M7.25 6.75C7.25 6.88807 7.13807 7 7 7C6.86193 7 6.75 6.88807 6.75 6.75C6.75 6.61193 6.86193 6.5 7 6.5C7.13807 6.5 7.25 6.61193 7.25 6.75Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M3 12C3 7.75736 3 5.63604 4.31802 4.31802C5.63604 3 7.75736 3 12 3C16.2426 3 18.364 3 19.682 4.31802C21 5.63604 21 7.75736 21 12C21 16.2426 21 18.364 19.682 19.682C18.364 21 16.2426 21 12 21C7.75736 21 5.63604 21 4.31802 19.682C3 18.364 3 16.2426 3 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mobile-slider-arrow left w-slider-arrow-left">
+                    <div class="features-arrow-icon w-icon-slider-left"></div>
+                  </div>
+                  <div class="mobile-slider-arrow right w-slider-arrow-right">
+                    <div class="w-icon-slider-right"></div>
+                  </div>
+                  <div class="display-none w-slider-nav w-round w-num"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section_timeline">
+        <div class="section-gap">
+          <div class="w-layout-blockcontainer container-main w-container">
+            <div class="timeline-wrapper">
+              <div class="section-heading-block align-left">
+                <div to-top-0="" class="section-subtitle-block bottom-space-lg">
+                  <div class="subtitle-dot"></div>
+                  <div class="subtitle-text">Our Timeline</div>
+                </div>
+                <div class="section-title-block max-width-35">
+                  <h2 class="heading-style-2">Key Milestones That Shaped LeadCraft</h2>
+                </div>
+              </div>
+              <div class="timeline-content-block">
+                <div to-top-2="" class="timeline-left-block"><img src="/images/Timeline-Image.webp" loading="lazy" sizes="(max-width: 564px) 100vw, 564px" srcset="/images/Timeline-Image-p-500.webp 500w, /images/Timeline-Image.webp 564w" alt="Two men in business attire having a discussion at a wooden table with an open notebook." class="timeline-image"><img src="/images/Timeline-Image-Overlay.svg" loading="lazy" alt="Timeline Image Overlay" class="timeline-image-overlay"></div>
+                <div class="timeline-right-block">
+                  <div to-top-4="" class="single-timeline-block v1">
+                    <div class="timeline-point-title-block">
+                      <div class="text-size-xsmall text-color-white">2026</div>
+                      <h3 class="heading-style-6">Where It All Began</h3>
+                    </div>
+                    <div class="timeline-point-summary-block">
+                      <p class="text-size-small">Began a career in business consulting and leadership, working with emerging teams and ambitious firms.</p>
+                    </div>
+                  </div>
+                  <div to-top-4="" class="single-timeline-block v1">
+                    <div class="timeline-point-title-block">
+                      <div class="text-size-xsmall text-color-white">2022</div>
+                      <h3 class="heading-style-6">Major Breakthrough</h3>
+                    </div>
+                    <div class="timeline-point-summary-block">
+                      <p class="text-size-small">Managed a multi-million-dollar trans-formation project, driving operational growth and strategic impact.</p>
+                    </div>
+                  </div>
+                  <div to-top-4="" class="single-timeline-block v1">
+                    <div class="timeline-point-title-block">
+                      <div class="text-size-xsmall text-color-white">2018</div>
+                      <h3 class="heading-style-6">Global Leaders Community</h3>
+                    </div>
+                    <div class="timeline-point-summary-block">
+                      <p class="text-size-small">Served over 500 clients, helping businesses boost performance and achieve growth.</p>
+                    </div>
+                  </div>
+                  <div to-top-4="" class="single-timeline-block v1 last">
+                    <div class="timeline-point-title-block">
+                      <div class="text-size-xsmall text-color-white">2014</div>
+                      <h3 class="heading-style-6">Expanding Globally</h3>
+                    </div>
+                    <div class="timeline-point-summary-block">
+                      <p class="text-size-small">LeadCraft supports founders and teams in 18+ countries, helping them grow with confidence.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-wf-component-id="ca8b9f64-c80d-9c51-e0c4-8e5e3a780830" data-wf-variant-state="base" class="section_blog">
+        <div class="section-gap">
+          <div class="w-layout-blockcontainer container-main w-container">
+            <div class="blog-wrapper">
+              <div class="section-heading-block">
+                <div to-top-0="" class="section-subtitle-block bottom-space">
+                  <div class="subtitle-dot"></div>
+                  <div class="subtitle-text">Blogs</div>
+                </div>
+                <div class="section-title-block max-width-25">
+                  <h2 class="heading-style-2 text-align-center">Stay up to date with our Journal </h2>
+                </div>
+              </div>
+              <div class="blog-content-block">
+                <div class="blog-cms-collection-block-v1 is-desktop">
+                  <div class="blog-collection-block is-1 w-dyn-list">
+                    <div role="list" class="blog-collection-list-v1 w-dyn-items">
+                      {homeBlogs.slice(0, 1).map((post) => (
+                      <div role="listitem" class="blog-collection-item w-dyn-item">
+                        <a href={`/blog/${post.slug}`} class="blog-item-card-block-v1 w-inline-block">
+                          <div class="blog-item-image-block"><img loading="lazy" src={post.thumbnail} alt="blog-item-image" class="blog-item-image"></div>
+                          <div class="blog-item-content-block">
+                            <div class="blog-item-title-block">
+                              <div class="heading-style-5 title-hover">{post.title}</div>
+                            </div>
+                            <div class="blog-item-info-block">
+                              <div class="blog-item-category-block">
+                                <div class="blog-item-category-dot"></div>
+                                <p class="text-size-small text-weight-medium text-color-white">{post.category}</p>
+                              </div>
+                              <div class="blog-item-date-block">
+                                <div class="blog-item-date">{formatDate(post.publishedAt)}</div>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      ))}
+                    </div>
+                    {homeBlogs.slice(0, 1).length === 0 && (
+                    <div class="w-dyn-empty">
+                      <div>No items found.</div>
+                    </div>
+                    )}
+                  </div>
+                  <div class="blog-collection-block is-2 w-dyn-list">
+                    <div role="list" class="blog-collection-list-v1 w-dyn-items">
+                      {homeBlogs.slice(1, 2).map((post) => (
+                      <div role="listitem" class="blog-collection-item w-dyn-item">
+                        <a href={`/blog/${post.slug}`} class="blog-item-card-block-v1 w-inline-block">
+                          <div class="blog-item-image-block"><img loading="lazy" src={post.thumbnail} alt="blog-item-image" class="blog-item-image"></div>
+                          <div class="blog-item-content-block">
+                            <div class="blog-item-title-block">
+                              <div class="heading-style-5 title-hover">{post.title}</div>
+                            </div>
+                            <div class="blog-item-info-block">
+                              <div class="blog-item-category-block">
+                                <div class="blog-item-category-dot"></div>
+                                <p class="text-size-small text-weight-medium text-color-white">{post.category}</p>
+                              </div>
+                              <div class="blog-item-date-block">
+                                <div class="blog-item-date">{formatDate(post.publishedAt)}</div>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      ))}
+                    </div>
+                    {homeBlogs.slice(1, 2).length === 0 && (
+                    <div class="w-dyn-empty">
+                      <div>No items found.</div>
+                    </div>
+                    )}
+                  </div>
+                  <div class="blog-collection-block is-3 w-dyn-list">
+                    <div role="list" class="blog-collection-list-v1 w-dyn-items">
+                      {homeBlogs.slice(2, 3).map((post) => (
+                      <div role="listitem" class="blog-collection-item w-dyn-item">
+                        <a href={`/blog/${post.slug}`} class="blog-item-card-block-v1 w-inline-block">
+                          <div class="blog-item-image-block"><img loading="lazy" src={post.thumbnail} alt="blog-item-image" class="blog-item-image"></div>
+                          <div class="blog-item-content-block">
+                            <div class="blog-item-title-block">
+                              <div class="heading-style-5 title-hover">{post.title}</div>
+                            </div>
+                            <div class="blog-item-info-block">
+                              <div class="blog-item-category-block">
+                                <div class="blog-item-category-dot"></div>
+                                <p class="text-size-small text-weight-medium text-color-white">{post.category}</p>
+                              </div>
+                              <div class="blog-item-date-block">
+                                <div class="blog-item-date">{formatDate(post.publishedAt)}</div>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      ))}
+                    </div>
+                    {homeBlogs.slice(2, 3).length === 0 && (
+                    <div class="w-dyn-empty">
+                      <div>No items found.</div>
+                    </div>
+                    )}
+                  </div>
+                </div>
+                <div class="blog-cms-collection-block is-mobile">
+                  <div class="blog-collection-block w-dyn-list">
+                    <div role="list" class="blog-collection-list w-dyn-items">
+                      {homeBlogs.map((post) => (
+                      <div role="listitem" class="blog-collection-item w-dyn-item">
+                        <a href={`/blog/${post.slug}`} class="blog-item-card-block w-inline-block">
+                          <div class="blog-item-image-block"><img loading="lazy" src={post.thumbnail} alt="blog-item-image" class="blog-item-image"></div>
+                          <div class="blog-item-content-block">
+                            <div class="blog-item-title-block">
+                              <div class="heading-style-5">{post.title}</div>
+                            </div>
+                            <div class="blog-item-info-block">
+                              <div class="blog-item-category-block">
+                                <div class="blog-item-category-dot"></div>
+                                <p class="text-size-small text-weight-medium text-color-white">{post.category}</p>
+                              </div>
+                              <div class="blog-item-date-block">
+                                <div class="blog-item-date">{formatDate(post.publishedAt)}</div>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      ))}
+                    </div>
+                    {homeBlogs.length === 0 && (
+                    <div class="w-dyn-empty">
+                      <div>No items found.</div>
+                    </div>
+                    )}
+                  </div>
+                </div>
+                <div to-top-2="" class="section-bottom-block">
+                  <div class="section-bottom-text-block">
+                    <p class="text-size-regular text-color-white-800">Explore more news and insight</p>
+                  </div>
+                  <a href="/blog" class="link-button w-inline-block">
+                    <div class="link-button-icon w-embed"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 12.083L12 15.833V8.33301L16 12.083Z" fill="currentColor"></path>
+                        <path d="M2 11.333H12V12.833H2V11.333Z" fill="currentColor"></path>
+                        <path d="M3.5 2.33301V12.333H2V2.33301H3.5Z" fill="currentColor"></path>
+                      </svg></div>
+                    <div class="link-button-text">Visit Journal</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-wf-component-id="53cb5297-990c-9364-7ad8-fd5810eb3b02" data-wf-variant-state="base" class="section_cta">
+        <div class="cta-inner-block">
+          <div class="cta-bg-block">
+            <div class="section-gap">
+              <div class="w-layout-blockcontainer container-main w-container">
+                <div class="cta-wrapper">
+                  <div class="cta-cotnent-block">
+                    <div class="cta-title-block">
+                      <div class="overflow-hidden">
+                        <h2 class="cta-title is-1">Let’s Start Your </h2>
+                      </div>
+                      <div class="overflow-hidden">
+                        <h2 class="cta-title is-2">Growth <em class="heading-style-1-ht">Journey</em></h2>
+                      </div>
+                    </div>
+                    <div class="section-summary-block display-none">
+                      <p class="text-size-large text-align-middle text-color-white-8">Consulting that translates innovation into outcomes.</p>
+                    </div>
+                    <div class="overflow-hidden">
+                      <div class="cta-button-block">
+                        <a href="/contact-v1" data-wf--white-button--variant="main-size" data-wf-component-id="7f51300f-9481-7764-372f-282224688a1e" data-wf-variant-state="base" class="white-button w-inline-block">
+                          <div class="button-dot-block dark"></div>
+                          <div class="button-text-block">
+                            <div class="button-text">Contact Us</div>
+                          </div>
+                        </a>
+                        <a href="#" class="link-button w-inline-block">
+                          <div class="link-button-icon w-embed"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M16 12.083L12 15.833V8.33301L16 12.083Z" fill="currentColor"></path>
+                              <path d="M2 11.333H12V12.833H2V11.333Z" fill="currentColor"></path>
+                              <path d="M3.5 2.33301V12.333H2V2.33301H3.5Z" fill="currentColor"></path>
+                            </svg></div>
+                          <div class="link-button-text">Get consulting</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+</BaseLayout>

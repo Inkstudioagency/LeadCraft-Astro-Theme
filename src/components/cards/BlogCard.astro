@@ -1,0 +1,50 @@
+---
+/**
+ * The blog card used by the blog index, the related-posts rails and the
+ * home/about journal sections.
+ *
+ * `variant` picks between the two Webflow layouts that share this markup:
+ *   default — full-width card (blog index, related posts, mobile rails)
+ *   v1      — staggered desktop rail on Home V1 / About V1
+ *
+ * `animate` is the IX2 trigger attribute Webflow put on the anchor
+ * (`to-top-2`, `to-top-4`, …); pass it through so the scroll animation still
+ * fires on the pages that had one.
+ */
+import { formatDate, type Blog } from '../../lib/content';
+
+interface Props {
+  post: Blog;
+  variant?: 'default' | 'v1';
+  animate?: string;
+  /** Webflow adds `title-hover` only where the heading animates on hover. */
+  titleHover?: boolean;
+}
+
+const { post, variant = 'default', animate, titleHover = false } = Astro.props;
+
+const cardClass =
+  variant === 'v1' ? 'blog-item-card-block-v1 w-inline-block' : 'blog-item-card-block w-inline-block';
+const titleClass = titleHover ? 'heading-style-5 title-hover' : 'heading-style-5';
+const animation = animate ? { [animate]: '' } : {};
+---
+
+<a {...animation} href={`/blog/${post.slug}`} class={cardClass}>
+  <div class="blog-item-image-block">
+    <img loading="lazy" src={post.thumbnail} alt="blog-item-image" class="blog-item-image" />
+  </div>
+  <div class="blog-item-content-block">
+    <div class="blog-item-title-block">
+      <div class={titleClass}>{post.title}</div>
+    </div>
+    <div class="blog-item-info-block">
+      <div class="blog-item-category-block">
+        <div class="blog-item-category-dot"></div>
+        <p class="text-size-small text-weight-medium text-color-white">{post.category}</p>
+      </div>
+      <div class="blog-item-date-block">
+        <div class="blog-item-date">{formatDate(post.publishedAt)}</div>
+      </div>
+    </div>
+  </div>
+</a>

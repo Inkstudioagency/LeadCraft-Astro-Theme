@@ -1,0 +1,148 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "LeadCraft - Astro Theme",
+  "description": "Leadcraft is a premium Business Consulting Astro Theme designed for consultants, agencies, advisors, and professional service firms. Showcase your expertise, generate leads, and grow your business with a modern, conversion-focused website.",
+  "url": "/home-v1",
+  "inLanguage": "en",
+  "about": {
+    "@type": "ProfessionalService",
+    "name": "LeadCraft",
+    "description": "Business consulting services helping founders, executives, and ambitious teams break growth plateaus, build scalable systems, and create measurable business momentum.",
+    "serviceType": [
+      "Personal brand consulting",
+      "Organizational transformation",
+      "Sales leadership training",
+      "Startup mentorship",
+      "Team performance optimization",
+      "Business growth consulting",
+      "Leadership strategy",
+      "Executive coaching"
+    ],
+    "areaServed": "Worldwide",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Business Consulting Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Personal brand consulting",
+            "description": "A strategic personal brand consulting engagement that positions you as an industry authority, amplifies your visibility, and turns your professional reputation into a powerful business development engine.",
+            "url": "/services/personal-brand-consulting"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Organizational transformation",
+            "description": "A full-scale organizational transformation engagement that redesigns structures, rebuilds culture, and equips leaders at every level to lead meaningful, lasting change.",
+            "url": "/services/organizational-transformation"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Sales leadership training",
+            "description": "A comprehensive sales leadership program that transforms how your team sells, coaches, and scales — driving measurable improvements in pipeline quality and revenue conversion.",
+            "url": "/services/sales-leadership-training"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Startup mentorship",
+            "description": "An intensive mentorship program designed for early-stage founders ready to validate their idea, build with confidence, and fast-track their path to funding and market traction.",
+            "url": "/services/startup-mentorship"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Team performance optimization",
+            "description": "A structured, data-driven program that diagnoses team performance gaps and implements proven frameworks to drive collaboration, accountability, and measurable output improvements.",
+            "url": "/services/team-performance-optimization"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Business growth consulting",
+            "description": "A results-driven consulting engagement that identifies your highest-leverage growth opportunities and builds the strategic roadmap to turn ambition into measurable revenue.",
+            "url": "/services/business-growth-consulting"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Leadership strategy",
+            "description": "A comprehensive leadership strategy engagement that aligns your vision, strengthens your leadership infrastructure, and positions your organization for scalable, sustainable growth.",
+            "url": "/services/leadership-strategy"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Executive coaching",
+            "description": "A high-impact, one-on-one coaching engagement designed to sharpen leadership clarity, accelerate decision-making, and unlock your full executive potential.",
+            "url": "/services/executive-coaching"
+          }
+        }
+      ]
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "3"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "author": {
+          "@type": "Person",
+          "name": "Leslie Alexander"
+        },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5"
+        },
+        "reviewBody": "Within just six months, our revenue doubled, our leadership team became aligned, and we finally built a business model that can scale with confidence and drive lasting success.",
+        "itemReviewed": {
+          "@type": "ProfessionalService",
+          "name": "LeadCraft"
+        }
+      },
+      {
+        "@type": "Review",
+        "author": {
+          "@type": "Person",
+          "name": "David Chen"
+        },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5"
+        },
+        "reviewBody": "Each session gave practical insights we could use immediately, boosting our market strategy and systems.",
+        "itemReviewed": {
+          "@type": "ProfessionalService",
+          "name": "LeadCraft"
+        }
+      }
+    ],
+    "email": "example@nanox.com",
+    "telephone": "+1 (555) 123-4567",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    }
+  }
+}

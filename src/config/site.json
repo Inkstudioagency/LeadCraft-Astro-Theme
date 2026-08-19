@@ -1,0 +1,48 @@
+{
+  "name": "LeadCraft",
+  "title": "LeadCraft - Consulting Website Astro Theme",
+  "description": "Leadcraft is a premium Business Consulting Astro theme for consultants, agencies, and advisors to showcase services and generate leads.",
+  "lang": "en",
+  "ogImage": "/images/og-image.webp",
+  "logo": {
+    "src": "/images/Footer-Sm-Logo-1.svg",
+    "alt": "Nav Logo"
+  },
+  "footerLogo": {
+    "src": "/images/Footer-Lg-Logo-3.svg",
+    "alt": "Company logo"
+  },
+  "newsletter": {
+    "subtitle": "Free weekly newsletter",
+    "title": "Get Weekly Growth Insights Delivered to Your Inbox",
+    "placeholder": "Enter your email",
+    "button": "Subscribe",
+    "success": "Thank you! Your submission has been received!",
+    "error": "Oops! Something went wrong while submitting the form."
+  },
+  "footerSummary": "Empowering the next generation of intelligent enterprises with cutting-edge AI technology to scale your growth.",
+  "contact": {
+    "emailLabel": "Email Address",
+    "email": "info@example.com",
+    "emailHref": "mailto:nanox@example.com",
+    "phoneLabel": "Phone Number",
+    "phone": "+(123) 456-78910",
+    "phoneHref": "tel:+0(123)456-78910",
+    "addressLabel": "Address",
+    "address": "Example DRE #01521930"
+  },
+  "social": {
+    "x": "https://x.com/",
+    "linkedin": "https://linkedin.com/",
+    "github": "https://github.com/",
+    "instagram": "https://www.instagram.com/"
+  },
+  "copyright": "Copyright © LeadCraft",
+  "author": {
+    "name": "Your Studio",
+    "label": "www.example.com",
+    "url": "https://example.com",
+    "themes": "https://astro.build/themes/",
+    "customization": "https://example.com/contact"
+  }
+}

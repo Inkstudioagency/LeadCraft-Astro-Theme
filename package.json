@@ -1,0 +1,25 @@
+{
+  "name": "leadcraft-astro-theme",
+  "type": "module",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "import:cms": "node scripts/import-cms.mjs",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.10",
+    "@astrojs/sitemap": "^3.7.3",
+    "astro": "^7.2.3",
+    "typescript": "^6.0.3"
+  },
+  "description": "LeadCraft — a business consulting Astro theme with Strapi-backed services, case studies and blog collections.",
+  "license": "MIT"
+}

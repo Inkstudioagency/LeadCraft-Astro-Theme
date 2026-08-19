@@ -1,0 +1,27 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "LeadCraft Astro Theme",
+  "description": "Leadcraft is a premium Business Consulting Astro Theme designed for consultants, agencies, advisors, and professional service firms. Showcase your expertise, generate leads, and grow your business with a modern, conversion-focused website.",
+  "url": "/",
+  "inLanguage": "en",
+  "about": {
+    "@type": "SoftwareApplication",
+    "name": "LeadCraft Astro Theme",
+    "applicationCategory": "WebApplication",
+    "description": "Premium Business Consulting Astro Theme designed for consultants, agencies, advisors, and professional service firms",
+    "offers": {
+      "@type": "Offer",
+      "description": "Astro Theme with 15+ pages, 40+ modular sections, and 25+ styles & components"
+    },
+    "featureList": [
+      "40+ Modular Sections",
+      "15+ Pages",
+      "25+ Styles & components",
+      "Figma file included",
+      "3 different Home pages",
+      "3 different Blog pages",
+      "3 different Contact pages"
+    ]
+  }
+}
