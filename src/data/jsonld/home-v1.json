@@ -137,7 +137,7 @@
         }
       }
     ],
-    "email": "example@nanox.com",
+    "email": "info@example.com",
     "telephone": "+1 (555) 123-4567",
     "address": {
       "@type": "PostalAddress",

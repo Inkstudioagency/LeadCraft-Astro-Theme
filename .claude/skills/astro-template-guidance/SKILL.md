@@ -28,7 +28,7 @@ Read the specific file in `references/` based on the user's request:
 - **Understanding the high-level codebase structure or data flow:**
   Read: `references/project-architecture.md`
 
-- **Running the project scripts (dev, build, CMS import, seeding):**
+- **Running the project scripts (dev, build, type-check):**
   Read: `references/script-usage.md`
 
 - **Customizing styles, Tailwind CSS v4, dark mode, or the theme engine:**

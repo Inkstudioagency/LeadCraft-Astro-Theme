@@ -85,18 +85,6 @@ Notes on the field design:
 `src/lib/strapi.ts` fetches with `populate=*` and normalises media objects to
 plain URL strings, so nothing else needs changing.
 
-### Regenerating the sample content
-
-The bundled JSON and the CMS media in `public/images/cms/` are generated from
-the Webflow CSV exports in `cms-export/`:
-
-```sh
-npm run import:cms
-```
-
-It downloads every referenced image once, rewrites the URLs to local paths, and
-writes `src/data/{services,case-studies,blogs}.json`.
-
 ---
 
 ## Configuration
@@ -136,8 +124,6 @@ src/
   layouts/      BaseLayout.astro
   lib/          content.ts (loaders), strapi.ts (client), nav.ts
   pages/        Routes
-scripts/
-  import-cms.mjs   CSV -> JSON + media download
 ```
 
 ---

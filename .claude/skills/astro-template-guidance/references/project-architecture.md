@@ -7,18 +7,15 @@ build time.
 ## Where things live
 
 ```
-Astro/
+leadcraft-astro-theme/
 ├── astro.config.mjs          site URL + sitemap integration
 ├── .env / .env.example       SITE_URL, STRAPI_URL, STRAPI_TOKEN
 ├── public/                   served verbatim at the site root
 │   ├── css/                  normalize.css, webflow.css, the theme stylesheet
 │   ├── js/webflow.js         Webflow interaction runtime (IX2)
 │   ├── images/               theme artwork
-│   ├── images/cms/           collection media, produced by `npm run import:cms`
+│   ├── images/cms/           collection media referenced by src/data/*.json
 │   └── fonts/ videos/ documents/
-├── scripts/
-│   ├── import-cms.mjs        CSV -> JSON + media download
-│   └── lib/                  csv.mjs (parser), transform.mjs (normalisers)
 └── src/
     ├── components/           Header, Footer, SeoMeta, cards/BlogCard
     ├── config/               site.json, menu.json, collections.json
@@ -31,15 +28,11 @@ Astro/
 ## Data flow
 
 ```
-cms-export/*.csv ──(npm run import:cms)──► src/data/*.json  +  public/images/cms/
-                                          │
-                                          ├──► src/lib/content.ts ──► pages
-                                          │
-                                          └──(your own seed script)─────► Strapi
-                                                                            │
-                                                     src/lib/strapi.ts ◄────┘
-                                                            │
-                                                            └► src/lib/content.ts
+src/data/*.json  +  public/images/cms/
+        │
+        ├──────────────────────► src/lib/content.ts ──► pages
+        │                              ▲
+        └──(your own seed script)──► Strapi ──► src/lib/strapi.ts
 ```
 
 `src/lib/content.ts` is the only module pages import for content. It decides at

@@ -24,7 +24,7 @@
   "contact": {
     "emailLabel": "Email Address",
     "email": "info@example.com",
-    "emailHref": "mailto:nanox@example.com",
+    "emailHref": "mailto:info@example.com",
     "phoneLabel": "Phone Number",
     "phone": "+(123) 456-78910",
     "phoneHref": "tel:+0(123)456-78910",

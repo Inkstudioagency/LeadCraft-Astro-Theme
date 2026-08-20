@@ -73,17 +73,6 @@ STRAPI_TOKEN=""     # only if the collections are not publicly readable
 See the **Wiring up Strapi** section of the README for the collection types and field names the loaders expect. Content is pulled
 at build time, so rebuild the site after editing in the CMS.
 
-## Re-importing from the CSV exports
-
-```sh
-npm run import:cms
-```
-
-Reads the Webflow CSVs in `cms-export/`, downloads every referenced image into
-`public/images/cms/` (skipping ones already there), rewrites the URLs to local
-paths, and rewrites `src/data/*.json`. **It overwrites those three files** — do
-not hand-edit them if you still plan to re-import.
-
 ## Rendering a collection in a page
 
 Keep Webflow's list classes and wrap the item in a `.map()`:
